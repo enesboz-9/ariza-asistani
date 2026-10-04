@@ -51,13 +51,27 @@ def predict(model, text):
     return ranked
 
 
-def ask_followup(kb, ranked, asked):
-    """En olası iki arızanın henüz sorulmamış bir belirtisini sor."""
-    for label, _ in ranked[:2]:
-        for symptom in kb[label]["belirtiler"]:
-            if symptom not in asked:
-                return symptom
-    return None
+def ask_followup(kb, ranked, asked, model=None):
+    """En olası iki arızayı en iyi ayıran, henüz sorulmamış belirtiyi sor.
+
+    Her aday belirti için modelin iki arıza arasındaki olasılık farkına bakılır:
+    "yakıt tüketimi arttı" her ikisine de uyuyorsa puanı düşük, yalnızca birine
+    özgüyse yüksek olur. Model verilmezse eski davranış (ilk uygun belirti).
+    """
+    (a, _), (b, _) = ranked[0], ranked[1]
+    cands = [(lab, s) for lab in (a, b) for s in kb[lab]["belirtiler"] if s not in asked]
+    if not cands:
+        return None
+    if model is None:
+        return cands[0][1]
+    classes = list(model.classes_)
+    ia, ib = classes.index(a), classes.index(b)
+    probs = model.predict_proba([s for _, s in cands])
+    def score(i):
+        lab = cands[i][0]
+        pa, pb = probs[i][ia], probs[i][ib]
+        return (pa - pb) if lab == a else (pb - pa)
+    return cands[max(range(len(cands)), key=score)][1]
 
 
 def show(kb, ranked):
@@ -96,7 +110,7 @@ def main():
         asked, questions = set(), 0
         ranked = predict(model, text)
         while (ranked[0][1] < CONF or ranked[0][1] - ranked[1][1] < MARGIN) and questions < MAX_QUESTIONS:
-            symptom = ask_followup(kb, ranked, asked)
+            symptom = ask_followup(kb, ranked, asked, model)
             if symptom is None:
                 break
             asked.add(symptom)

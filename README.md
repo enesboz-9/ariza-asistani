@@ -12,6 +12,8 @@ Karar küçük bir ML modelinden gelir (~0.1 MB); LLM yalnızca eğitim verisi �
     python chat.py                    # sohbeti başlat
 
 ## Daha büyük veri
+- `data/knowledge_base.json` içindeki `anahtar_kelimeler` (parça adları: buji, radyatör, turbo hortumu...) şablon üretimine "buji bozuk galiba" tipi cümleler ekler. Gerçek sürücüler belirti kadar parça adı da söyler.
+- Bot, güvensiz olduğunda iki arızayı en iyi ayıran belirtiyi sorar (eskiden listedeki ilkini soruyordu).
 - `generate_data.py --per-class 300` (varsayılan) şablonlardan ~8000 cümle üretir; her cümlenin %50'si için
   Türkçe karaktersiz / yazım hatalı / noktalamasız varyant eklenir.
 - `python run_pipeline.py --llm --per-class 500` Claude'a çok çeşitli kullanıcı cümleleri yazdırır.
@@ -26,8 +28,9 @@ Karar küçük bir ML modelinden gelir (~0.1 MB); LLM yalnızca eğitim verisi �
 - Simüle sürücü (LLM) gizli bir arıza seçip belirtiyi anlatır, botun sorularına cevap verir.
 - Bot yanılırsa öğretmen (LLM) o arıza için 5 zor anlatım yazar; hepsi `data/selfplay.jsonl` dosyasına gider.
 - Bot'un çok yanıldığı arızalar daha sık seçilir. Her 25 konuşmada yeniden eğitim yapılır;
-  yeni model, elle yazılmış test setinde eskisinden kötüyse kaydedilmez.
-- `--hard`: simüle sürücü daha belirsiz anlatır. Bot ilk 25-50 konuşmada hep doğru biliyorsa (sürücü çok kolay anlatıyor demektir) bunu aç.
+  yeni model, şimdiye kadarki en iyi skordan 0.01'den fazla kötüyse kaydedilmez (84 cümlelik testte daha küçük farklar gürültüdür). Öz-oyun, geri bildirim ve CSV cümleleri eğitimde şablon cümlelerden 3-5 kat ağırlıklıdır; yoksa 8000 şablon cümle birkaç yeni cümleyi bastırır.
+- Zor mod artık varsayılan: sürücü belirtiyi belirsiz ve kısa anlatır. `--easy` yalnızca akış denemesi içindir; kolay modda %100 doğruluk bir şey ölçmez (sürücü bilgi tabanındaki cümleleri neredeyse aynen tekrarlar).
+- Seçilen modeller `selfplay_state.json` içinde saklanır, her açılışta yeniden denenmez.
 - Model başka bir scikit-learn sürümüyle kaydedilmişse program bunu fark edip bu bilgisayarda yeniden eğitir.
 - Günlük kota dolunca `data/selfplay_state.json` içine bekleme süresi yazılır; uygulama kapansa bile
   yeniden başlatınca bekleme biter, döngü devam eder. Konuşma kayıtları: `data/selfplay_log.jsonl`.
@@ -44,7 +47,7 @@ Karar küçük bir ML modelinden gelir (~0.1 MB); LLM yalnızca eğitim verisi �
    taşırsın (`{"text": "...", "label": "fren"}`), sonra `python train.py`.
 
 ## Sınırlar
-- Test seti küçük (84 cümle). Şablon verisiyle ölçülen doğruluk yaklaşık %77'dir; bilgi tabanındaki ifadelerden uzak anlatımlarda ve belirtileri birbirine yakın arızalarda (akü / alternatör / marş, lastik / direksiyon) hata yapar. Gerçek kullanıcı cümleleriyle test setini büyüt.
+- Test seti küçük (84 cümle); `train.py` doğruluğun bootstrap aralığını yazar (şu an ~%81-94). Şablon verisiyle ölçülen doğruluk yaklaşık %88'dir; bilgi tabanındaki ifadelerden uzak anlatımlarda ve belirtileri birbirine yakın arızalarda (akü / alternatör / marş, lastik / direksiyon) hata yapar. Gerçek kullanıcı cümleleriyle test setini büyüt.
 - Sentetik veri gerçek dilden farklıdır; geri bildirim verisi geldikçe iyileşir.
 - Bilgi tabanı (`data/knowledge_base.json`) örnek amaçlıdır, bir uzmana doğrulat.
 - Ön tahmindir, kesin teşhis değildir.

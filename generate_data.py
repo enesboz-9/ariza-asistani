@@ -24,12 +24,39 @@ CONTEXT = ["", "", "soğuk havada ", "yokuş çıkarken ", "sabahları ", "uzun 
            "otoyolda ", "ilk çalıştırmada ", "akşamları "]
 
 
+# Gerçek sürücüler belirti kadar parça adını da söyler ("radyatör fanı çalışmıyor").
+# Bilgi tabanındaki "anahtar_kelimeler" bu cümleleri üretir.
+PART_PROBLEM = ["bozuk galiba", "arızalı olabilir mi", "sorun çıkardı", "değişmesi gerekiyor mu",
+                "ile ilgili sorunum var", "sorunlu sanırım", "bozulmuş gibi", "kontrol ettirmem lazım",
+                "yüzünden mi böyle oluyor", "hakkında bilgi verir misiniz", "çok kötü durumda",
+                "yıprandı galiba", "tamire gitti ama düzelmedi"]
+PART_FIRST = ["", "", "Hocam ", "Usta ", "Merhaba, ", "Sanırım "]
+
+
+def keyword_sentences(info: dict, n: int, rng: random.Random) -> set[str]:
+    """Parça adı + genel şikâyet ("buji bozuk galiba") ya da belirti + parça şüphesi."""
+    out, tries = set(), 0
+    kws = info.get("anahtar_kelimeler", [])
+    while kws and len(out) < n and tries < n * 30:
+        tries += 1
+        kw = rng.choice(kws)
+        if rng.random() < 0.5:
+            text = f"{rng.choice(PART_FIRST)}{rng.choice(SUBJECT)} {kw} {rng.choice(PART_PROBLEM)}"
+        else:
+            body = rng.choice(info["belirtiler"])
+            text = f"{rng.choice(PREFIX)}{body}, {kw} {rng.choice(PART_PROBLEM)}"
+        text = " ".join(text.split())
+        out.add(text[0].upper() + text[1:])
+    return out
+
+
 def template_sentences(kb: dict, per_class: int, rng: random.Random) -> list[dict]:
     rows = []
     for label, info in kb.items():
         seen = set()
         tries = 0
-        while len(seen) < per_class and tries < per_class * 30:
+        n_symptom = per_class if not info.get("anahtar_kelimeler") else int(per_class * 0.7)
+        while len(seen) < n_symptom and tries < per_class * 30:
             tries += 1
             k = rng.choice([1, 1, 2])
             parts = rng.sample(info["belirtiler"], k)
@@ -38,6 +65,7 @@ def template_sentences(kb: dict, per_class: int, rng: random.Random) -> list[dic
                     + body + rng.choice(SUFFIX)).strip()
             text = " ".join(text.split())
             seen.add(text[0].upper() + text[1:])
+        seen |= keyword_sentences(info, per_class - len(seen), rng)
         rows += [{"text": t, "label": label} for t in seen]
     return rows
 

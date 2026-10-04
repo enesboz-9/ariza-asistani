@@ -3,3 +3,276 @@
 {"text": "ABS lambası yanıyor, fren pedalında da hafif titreşim hissediyorum; ayrıca “çekiş kontrol devre dışı” yazısı belirdi.", "label": "abs"}
 {"text": "Motor başlatılmadan önce ön taraftan bir cırt cırt sesi geliyor, rölantide de motor düzgün çalışmıyor ve tıkırtılı bir şekilde dönüyor. Ayrıca motor kapağının altında da bir tıkırtı duyuyorum.", "label": "triger"}
 {"text": "Marşa basınca motor dönmüyor, ama bazen çalışıyor; farlar yanıyor fakat kontakta hiç ses çıkmıyor. Marş motoru bir kez bastıktan sonra sıkışıyor ve yanık kokusu duyuluyor.", "label": "mars"}
+{"text": "Debriyaj pedalı çok sert, vites geçerken zorlaşıyor ve yanık koku geliyor.", "label": "debriyaj"}
+{"text": "Marş basınca takırtı geliyor ama motor döndürmüyor ve bazen çalışıyor bazen çalışmıyor; kontakta hiçbir ses gelmiyor ama farlar yanıyor.", "label": "mars"}
+{"text": "Buzdolabından sıcak bir çorba gibi marş motoru çarpıyor, ama bir kez de olsa çalıştırdığımda motor dönmüyor, bazen ise çalışıyor; kontak kapalıyken farlar yanıyor, ancak motoru ittirince çalışıyor.", "label": "mars"}
+{"text": "Araç güçsüz kalıyor, gaz verirken mavi duman çıkıyor ve motor yağı hızla azalıyor. Ayrıca ivmelenirken yavaşlıyor ve ıslık gibi bir ses duyuyorum.", "label": "turbo"}
+{"text": "Sabah marşa bastığımda motor çalışmıyor, sadece tık tık sesi duyuyorum ve farlar silik yanıyor. Kontakta takıldığımda gösterge ışıkları titriyor ve akü lambası yanıyor.", "label": "aku"}
+{"text": "Klima açınca hem havayı soğutmuyor hem de kötü bir koku yayılıyor; ayrıca motor biraz zorlanıyor ve tıkırtı sesi duyuyorum.", "label": "klima"}
+{"text": "Motor lambası sürekli yanıyor ve yakıt tüketimim aniden çok artmış durumda. Rölanti hafif dalgalı, egzozdan yoğun bir koku çıkıyor ve bilgisayar lambda sensörü hatası veriyor.", "label": "lambda"}
+{"text": "Hızlı dönüldüğünde direksiyon sürekli titriyor ve araç sağa çarpıyor, ayrıca ön tekerleklerin biri yan tarafında şişlik ve hava kaçıyor. Jantların da çarpık göründüğünü fark ettim.", "label": "lastik"}
+{"text": "Motor rölantide titreyecek kadar sallanıyor, gaz verince bile hemen harekete geçmiyor. Sık sık ışık yanıp söndüğü için yakıt tüketimi de artmış durumda.", "label": "atesleme"}
+{"text": "Çukurdan geçerken tak tak ses çıkarıyor ve araç sallanarak gidiyor. Ayrıca viraj alırken yavaş yavaş yalpalıyor, direksiyon da biraz gevşek hissediliyor.", "label": "suspansiyon"}
+{"text": "Aracım yüksek hızda tekliyor, motor da birden duruyor. Yakıt dolu olsa bile çalışmıyor, gazı bastığımda tepki gelmiyor.", "label": "yakit"}
+{"text": "Akü ışığı her zaman yanıyor, farlar seyir halinde yanıp söndürüyor. Motor çalışırken akü hemen boşalıyor, kayış sesleri duyuluyor ve araç yolda kaldığında tekrar çalışmıyor.", "label": "alternator"}
+{"text": "Araç hızlanırken güç eksikliği hissediyorum, gaz verince yüksek sesli bir ıslık eşliğinde mavi duman çıkıyor. Motor yağı çok hızlı düşüyor ve hızlanırken boğulma hissi oluyor.", "label": "turbo"}
+{"text": "Çukurdan geçerken tak tak sesler çıkıyor, araç sallanıyor ve direksiyon çok gevşek hissediyor. Viraj alırken de yalpalıyor, sanki yol tutuşu kaybolmuş gibi.", "label": "suspansiyon"}
+{"text": "Yağ ikazı yanıyor, motorun altından yağ lekesi var ve motor sesi biraz tıkırıyor. Motordan yanık yağ kokusu alıyorum ve egzozdan biraz duman çıkıyor.", "label": "yag"}
+{"text": "Marşa basınca takırtı çıkıyor ama motor hiç dönmüyor, bazen çalışıyor bazen çalışmıyor; farlar yanıyor ama kontakta ses gelmiyor. Marş motoru bir kez bastıktan sonra sıkışıyor ve yanık koku duyuyorum.", "label": "mars"}
+{"text": "Direksiyon çok ağır döndürüyor ve çevirirken inleme sesi duyuyorum; ayrıca direksiyonda servo yağı sızıyor ve ışık yanıyor. Park ederken direksiyonu çevirmek zorlaşıyor.", "label": "direksiyon"}
+{"text": "ABS lambası yanıyor, fren pedalına bastığımda pedal titriyor ve el freniyle birlikte de yanıyor. Kaygan zeminlerde direksiyon tutamıyorum, araç kontrolsüz bir şekilde kayıyor.", "label": "abs"}
+{"text": "Fren yaparken bir gıcırtı duyuyorum, pedal da çok yumuşak; aynı anda direksiyon hafif titredi ve aracın fren mesafesi uzadı. Bu arada fren lambası yanıyor ve fren yapınca araç bir tarafa çekiyor.", "label": "fren"}
+{"text": "Yağı çok azalmış, motorun altından yağ lekesi çıkıyor ve yanık yağ kokusu duyuluyor. Motor sesi biraz sertleşmiş, tıkır tıkır oluyor ve egzozdan duman çıkıyor.", "label": "yag"}
+{"text": "Direksiyon çok ağır döndürüyor ve çevirirken bir inleme sesi duyuyorum; ayrıca direksiyonun içinde bir boşluk var ve sanki kendi kendine merkeze dönmüyor. Diğer taraftan, direksiyon ışığı yanıyor ve park ederken direksiyon çevirme zorlaşıyor.", "label": "direksiyon"}
+{"text": "Motorun önünden cırlama sesi çıkıyor ve tıkırtılı bir rölanta sahip, ayrıca motor kapağı üzerinden de hafif bir tıkırtı duyuyorum. Triger kapağında yağ kalıntısı var ama aynı zamanda motorda bir tıkırtı var, bu yüzden servise gitmem gerek.", "label": "triger"}
+{"text": "Fren pedalına bastığımda bir gıcırtı duyuyorum ve direksiyon hafif titriyor, ayrıca fren yaparken aracı bir tarafa çekiyor. Bu yüzden fren lambası yanıyor ve fren mesafesi uzamış gibi görünüyor.", "label": "fren"}
+{"text": "Akü lambası her zaman yanıyor, farlar seyir halinde kararıyor ve motor çalışırken akü tamamen boşalıyor, sonuçta araç yolda duruyor ve yeniden çalışmıyor.", "label": "alternator"}
+{"text": "Fren yapınca metal gibi bir gıcırdayış duyuyorum, ayrıca fren pedalı çok yumuşak ve araç bir tarafa çekiliyor.", "label": "fren"}
+{"text": "Aracım aniden güçsüz kalıyor, gaz verirken motorun içinde bir çığlık gibi bir ses yükseliyor. Ayrıca mavi dumanla birlikte yağın da çok hızlı tükeniyor gibi görünüyor.", "label": "turbo"}
+{"text": "Araç aniden güçsüz kalıyor, gaz verirken de bir ses çıkıyor, bazen de mavi bir duman tutuşuyor. Turbonun çalışmadığını hissediyorum; motor yağının çok hızlı bitmesi de fark ediyorum.", "label": "turbo"}
+{"text": "Araba çukurdan geçerken bir tak tak ses çıkarıyor ve ilerlemeye devam ederken sallanıyor, tıpkı eski bir otobüs gibi. Ayrıca viraj alırken biraz yalpalanıyor, sanki direksiyona çok fazla hava dolmuş gibi hissediyorum.", "label": "suspansiyon"}
+{"text": "Aracım aniden güçsüzleşiyor, tırnağı gibi bir ses çıkıyor ve egzozdan mavi duman çıkıyor. Hemen servise gitmek lazım, belki yağ borusunda bir şey var.", "label": "turbo"}
+{"text": "Aracımda motorun önünden cırlama sesleri çıkıyor, tıkırtılar var, bazen marş basıyor ama çalışmıyor gibi geliyor. Tıpkı yağlı bir kapak gibi bir şey olabilir, ama tam olarak ne olduğunu bile bilmiyorum.", "label": "triger"}
+{"text": "Rölantide motor sallanıyor ve hızlanınca da çekiyor, yakıt tüketimi de normalden çok daha fazla. Bence belki akü ya da yağlı bir şeyde problem var.", "label": "atesleme"}
+{"text": "Arka tarafta çok sesli bir şey oluyor, aynı zamanda yumurta gibi bir koku yayılıyor.", "label": "egzoz"}
+{"text": "Aracımın motorundan garip bir çınlama çıkıyor, tıkırtılı bir ses var, bazen marş basıyor ama çalışmıyor.", "label": "triger"}
+{"text": "Vites takılırken bir yandan çok hızlı çıkıp diğer yandan da yavaşlayıp, sanki motor bir türlü karar veremiyormuş gibi hissediyorum. Şaşıracak bir şey varsa belki de şanzımdaki bir parçanın sıkıştığını düşünüyorum.", "label": "sanziman"}
+{"text": "Klima açtığımda içinde kötü bir koku hissediyorum, aynı zamanda motor biraz zorlanıyor ve hafif bir tıkırtı duyuyorum. Belki de içi dolmuş bir şey var, tamirciye gideceğim.", "label": "klima"}
+{"text": "Egzozdan gelen yüksek sesle birlikte, sanki bir çarpıtılmış çekiç gibi bir gürültü duyuyorum. (Bence motorun içindeki bir şey sızlıyor olabilir.)", "label": "egzoz"}
+{"text": "Aracım rölantide sallanıyor, hızlanınca da çekmiyor; bazen yanıp sönerek bir ışık yanıyor. Belki yakıtla ilgili bir sorun olabilir.", "label": "atesleme"}
+{"text": "Fren çektikçe arka kapı gibi bir gıcırdayış duyuyorum, direksiyon hafif titredi. Sanırım fren balatalarında bir sorun var.", "label": "fren"}
+{"text": "Motor çok fazla ısınıyor, sıcaklık göstergesi kırmızıya dönüyor ve kaputtan bir şey buhar çıkıyor. ️", "label": "sogutma"}
+{"text": "Farlarım sürekli kararıyor, akü lambası her daim yanıyor, araç yolda durunca tekrar başlıyor ama gözüküyor ki şarj yok.", "label": "alternator"}
+{"text": "Motor sürekli “yong” diye ışık yakıyor, ben de aklıma yakıtın hoca gibi fazladan tükettiğini getiriyorum.", "label": "lambda"}
+{"text": "Aracımın motor ışığı hiç sönmüyor, benzin de çabuk bitiyor, motor titriyor.", "label": "lambda"}
+{"text": "Motor ışığı yanıyor, yakıt harcaması birden artıyo, egzoz da garip kokuyor.", "label": "lambda"}
+{"text": "Sürekli yanıyor motor uyarı ışığı, rölantide motor dalgalı, yakıt tüketimi artmış.", "label": "lambda"}
+{"text": "Araba birden fazla litre harcıyor, motor ışığı yanıyor, egzozda yoğun koku var.", "label": "lambda"}
+{"text": "Motor lambası sürekli yanıyor, yakıt harcaması yükseldi, rölanti hafif dalgalanıyor.", "label": "lambda"}
+{"text": "Bence motor çok ısınıyor, sıcaklık çubuğu kırmızıya döndüğünde aniden kapıdan bir buhar çıkıyor. Sanırım antifriz sızıyor ve yerde sıvı birikti, ama kesin bilemiyorum.", "label": "sogutma"}
+{"text": "Arabanın motoru sanki sıcak bir çorba gibi ısınıyor, sıcaklık göstergesi kırmızıya dönüyor ama ben sadece “sıcak” diyeceğim. Biraz da yerde sıvı birikti, bu da “sızıntı” gibi bir şey.", "label": "sogutma"}
+{"text": "Araç frenlerken pedal titriyor ve ışık yanıyor, sanki hiçbir şey kontrol edemiyor; sanki direksiyon yanaktan kayıp gider.", "label": "abs"}
+{"text": "Motor önünden gelen hafif cırlama sesi var, rölantide motor sık sık tıkırtıyor, kapaktan da bir tıkırtı çıkıyor.", "label": "triger"}
+{"text": "Sokaktan çıkarken motor hemen başlıyork, ama çak çak sesiyle dönmüyor, ışıkları da yanıp sönüyor. Kapatıp tekrar açınca gözlerim titredi, sanki pil bitmiş gibi.", "label": "aku"}
+{"text": "Sabah işe geç kaldım, kontağı çevirince sadece bir tik sesi geliyor, farlar da sanki düşük pil gibi yanıyor.", "label": "aku"}
+{"text": "Araba hiç çalışmıyor, anahtarı çevirince ışıklar titriyor ve motor hiç dönmüyor, sanki batarya öyle bir şey.", "label": "aku"}
+{"text": "Kapatıp açınca gözüme bir çarpma hissetti, motor hemen başlamıyor, bir tık sesi var ve farlar karardı.", "label": "aku"}
+{"text": "Marş basınca zayıf bir ses duyuyorum, farlar soluk, araç soğukta hiç çalışmıyor, sanki enerji yok.", "label": "aku"}
+{"text": "Kontak açınca göstergeler titriyor, motor sadece bir tik atıyor, ışıklar sönük, bir şeyler çok zayıf.", "label": "aku"}
+{"text": "Direksiyon döndürürken bir “tık” sesi geliyor ve hafifçe çiğnediği hissi var, bazen de motor kapalıyken bile direksiyon merkezden hafif kayboluyor. Çalıştırınca biraz zorlanıyorum, ama tam olarak neyin yanlış olduğuna dair kafam karışık.", "label": "direksiyon"}
+{"text": "Pencereyi açıp hızla ilerlerken bir anda ABS ışığı yanıyor, fren basınca pedalda hafif titreşim oluyor ve sanki araç bir yerlere sürülecek gibi hissediyorum. Biraz da, ESP ışığı yanıp sönüyor ama tam olarak ne olduğunu bilemiyorum, belki de sürüş kontrolüyle ilgili bir sorun.", "label": "abs"}
+{"text": "Debriyaj tabancadan çıkıyor gibi hissediyorum, hız artıyor ama araba hiç ileri gitmiyor, yanık bir koku da var. Sanırım bu arızanın nedeni debriyajın bir şekilde bozulmuş olması.", "label": "debriyaj"}
+{"text": "Motor biraz çok ısınıyor, duman çıkıyor ve yerde bir sıvı kalıyor. Belki de su sisteminde bir sızıntı var.", "label": "sogutma"}
+{"text": "Motor çok fazla ısınıyor, sanki bir şey tutuyor gibi. Yerde bir sıvı buldum, belki de bir kaç kapak açılmış?", "label": "sogutma"}
+{"text": "Egzozdan yüksek sesle bir şey çıkıyor, arka taraftan da tuhaf bir gürültü geliyor, sanırım motorun bir yerinde sorun var. Ayrıca dışarıda yumurta gibi bir koku duyuyorum, bu da bir şeyin yanıp yanmadığını gösteriyor.", "label": "egzoz"}
+{"text": "Kötü bir hava geçişi gibi, motor çok ısınıyor, kaza yapıyor, ve hızlanırken tırnak gibi bir ses çıkıyor, belki de yağ sızıntısı olmuş olabilir.", "label": "debriyaj"}
+{"text": "Araba birden bire takılıyor, gaz basınca motor çırpıyor ama yolda aynı kalıyor, pedal çok sertleşti.", "label": "debriyaj"}
+{"text": "Vites atmaya çalışınca çıtırtı sesleri geliyor, gaz verdiğimde devir yükseliyor ama hız artmıyor, sanki bir şey yanıyor.", "label": "debriyaj"}
+{"text": "Sürüşte bir anda motor ısınıyor, bir de o garip çatırtı sesini duyuyorum; pedalı serbest bırakınca araç duruyor gibi.", "label": "debriyaj"}
+{"text": "Pedal basınca araba zıplıyor ama hızlanmıyor, bir yandan da yanık kokusu var, vites geçişi çok zor.", "label": "debriyaj"}
+{"text": "Aracın içinde bir şey ısınıyor gibi kokuyor, gazı açınca devir yükseliyor ama yol gitmiyor, vitesler takılıyor.", "label": "debriyaj"}
+{"text": "Klima açınca garip bir koku ve tıkırtı duyuyorum, motor da sanki zorlanıyor. Sanırım içten bir şey var, belki de hava akışıyla ilgili bir sorun.", "label": "klima"}
+{"text": "Sabah motor sıkıntılı çalışıyor, akü ışığı yanıyor.", "label": "aku"}
+{"text": "Aracın motoru çok sıcak, kırmızı ışık yanıyor ve yerde sıvı gibi bir şey biriken. Aynı zamanda kalıtsız bir tatlı koku ve duman çıkıyor.", "label": "sogutma"}
+{"text": "Aracım yüksek hızda tekliyor, motor birden duruyor ve çalıştırırken uzun süre marşa basmam gerekiyor. Depo dolu olsa bile vızıltı geliyor, yakıt kokusu da çıkıyor.", "label": "yakit"}
+{"text": "Aracımın yakıt harcaması aniden çok arttı, sürüş sırasında biraz sıkışıp gıcırdayıp yavaşlıyor.", "label": "lambda"}
+{"text": "Yakıt tüketimim birden yükseldi, motor ışığı yanıyor, araba yavaş çekişiyor.", "label": "lambda"}
+{"text": "Aracım sık sık takılıyor, rölanti dalgalanıyor ve egzoz çok kokulu.", "label": "lambda"}
+{"text": "Şimdi birden fazla milim kadar daha çok benzin harcıyor, motor ışığı sürekli yanıyor.", "label": "lambda"}
+{"text": "Araçta performans düştü, rölantide titriyor, egzozda garip bir koku var.", "label": "lambda"}
+{"text": "Motor ışığı sönmüyor, yakıt harcaması artıyor ve arabanın hızı düşüyor.", "label": "lambda"}
+{"text": "Egzozdan çok yüksek bir ses çıkıyor ve aynı anda araçta çok fazla duman görünüyor, sanki motor içi çok sıcak oluyor.", "label": "egzoz"}
+{"text": "Marş basınca takırtı çıkıyor ama motor hiç döndürmüyor, bazen çalışıyor bazen de çalışmıyor.", "label": "mars"}
+{"text": "Araba yavaş yavaş sürükleniyor, hızlanırken devirler yükseliyor ama ilerleme yok, bir yandan da pedal çok sert ve yerde kalıyor.", "label": "debriyaj"}
+{"text": "Şimdi direksiyonu çevirirken motorun aniden yavaşlaması ve gaz pedalına basınca motorun tıkır tıkır yanması gibi bir durum oluyor. Sanırım egzoz sisteminde bir tıkanma ya da filtre sorun olabilir, ama tam olarak ne olduğunu bilmiyorum.", "label": "dpf"}
+{"text": "Araba aniden durup yeniden çalışıyor, duman da çıkıyor, bir şeyler tıkıyor gibi.", "label": "dpf"}
+{"text": "Şoför kolunu çevirince motor titriyor, gazda cevap vermiyor, bir anda güç kaybediyorum.", "label": "dpf"}
+{"text": "Yoğun trafikte durunca motor kendini kapatıyor, sonra tekrar çalışıyor ama çok zor.", "label": "dpf"}
+{"text": "Şu an yağım yükselmiş gibi, yakıt harcaması da artmış, bir şeyler tıkırdamaya başladı.", "label": "dpf"}
+{"text": "Araç acil modda takılıyor, fan tam gazda bile yüksek sesle dönüyor, egzozdan garip ses geliyor.", "label": "dpf"}
+{"text": "Akü lambası sürekli yanıyor, farlar seyir halinde kararıyor ve birden araç yolda kalıyor. ￼", "label": "alternator"}
+{"text": "Motor ışığı sürekli yanıyor, tıpkı eski bir araba gibi. Şu an bakınca, arka koltukta bir şeyler tutuşmuş gibi bir koku var ve ben de “böyle bir şey mi olabilir?” diye düşünüyorum.", "label": "lambda"}
+{"text": "Motor ışığım yanıyor ve yakıt tüketimim bir anda artmaya başladı, bir şeyler garip kokuyor.", "label": "lambda"}
+{"text": "Araç rölantide titriyor, egzozdan yoğun bir koku geliyor, performansda da hafif bir düşüş var.", "label": "lambda"}
+{"text": "Şu an motor göstergesi ışığı kapalı kalmıyor, araba daha çok benzin harcıyor ve dışarıda yanık gibi bir koku var.", "label": "lambda"}
+{"text": "Araba birden bire rölantide dalgalanıyor, emisyon kontrol lambası yanıyor, benzin tüketimim artmış gibi.", "label": "lambda"}
+{"text": "Motor lambası sürekli yanıyor, egzozda yoğun koku, rölanti dengesiz, sürüşte hafif bir güç kaybı hissediyorum.", "label": "lambda"}
+{"text": "Aracım son zamanlarda arka kısmı çok gürültülü çalışıyor, motor da eski gibi hissediyorum. Hafifçe titrediğini fark ettim.", "label": "egzoz"}
+{"text": "Aracımın havalandırma sistemi açıldığında havanın sıcak geldiğini hissediyorum; bazen tıkırtı gibi bir sesle birlikte motor da biraz zorlanıyor. Belki de fan ya da kompresörün bir kısmı çalışmıyor olabilir.", "label": "klima"}
+{"text": "Araç yavaşça kaymaya başladı, direksiyonla tutunmak zorlaşıp hızlanırken pedal hafifçe titredi. Çekiş kontrolü kapalı gibi görünüyordu, ama kesin olarak emin değilim.", "label": "abs"}
+{"text": "Çukurda geçerken tak tak ses geliyor, arabam sallanıp ilerliyor.", "label": "suspansiyon"}
+{"text": "Sabah marşa basınca motorun güçsüzce çalışıyor, farlar bile yanıyor ama ışık çok zayıf. Belki de aküde bir şey var, akü lambası yanıyor.", "label": "aku"}
+{"text": "Aracımın motoru sürekli yanıp duruyor, yakıt da normalden çok daha çok alıyor. Bence belki de gaz kısıtlayıcı bir şeyler var, ya da egzoz sisteminde bir tıkanma olmuş olabilir.", "label": "lambda"}
+{"text": "Motorum birdenbire çok fazla benzin yiyor, rölantide titriyor ve egzozdan çok yoğun bir koku geliyor.", "label": "lambda"}
+{"text": "Araba bir şeyler söylemek istiyor gibi; motor ışığı yanıyor, yakıt harcaması arttı ve gaz pedalına bastığımda tepki yavaş.", "label": "lambda"}
+{"text": "Sürekli ateşleme sorunu var, rölanti dalgalı, dışarıdan çıkan duman ve koku bir şeylerin bozulduğunu gösteriyor.", "label": "lambda"}
+{"text": "Aracım normalden fazla yakıt alıyor, motor ışığı yanıyor, egzozda garip bir koku var, performans da düşük.", "label": "lambda"}
+{"text": "Araçta motor ışığı yanıyor, yakıt tüketimi patladı, rölantide dalgalanma var, dışarıda yoğun egzoz kokusu hissediyorum.", "label": "lambda"}
+{"text": "Klima açınca soğuk hava gelmiyor ve kötü bir koku yayılıyor, bazen de motor biraz zorlanıyor gibi hissediyorum.  \nİçerde bir şeyler eksik kalmış olabilir; belki de hava filtreleri tıkanmış ya da kompresör bir şeyler tutuyor.", "label": "klima"}
+{"text": "Araç çukurdan geçerken bir tak tak ses çıkarıyor, direksiyon biraz gevşek gibi oluyor, belki de süspansiyon kısmında bir sorun var. Ayrıca viraj alırken hafifçe yalpalıyor, bu da lastiklerin ya da jantların düzgün olmadığını gösterebilir.", "label": "suspansiyon"}
+{"text": "Şehir içi sürüşlerde sık sık bir hırıltı duyuyorum, motor biraz tuhaf davranıyor, tıpkı eski bir arabada olduğu gibi. Ayrıca yakıt tüketimim son zamanlarda artıyor; bu durum, aracın bir şeyleri yanlış yönlendirdiğini gösteriyor olabilir.", "label": "dpf"}
+{"text": "Yüksek hızda direksiyon hafifçe titreşiyor, sanki bir tarafı çekiyor gibi. Bence belki de jant çarpık, ama kesin bilmiyorum.", "label": "lastik"}
+{"text": "Araç yavaş tutunuyor, bir tırnak gibi ses çıkarıyor; direksiyon hafif titredi.", "label": "fren"}
+{"text": "Frenye bastığımda aniden bir çatırtı duyuyorum, aracın durması bayağı gecikiyor.", "label": "fren"}
+{"text": "Araba yavaşladığında direksiyon biraz sallanıyor, fren pedalım da çok yumuşak hissettiriyor.", "label": "fren"}
+{"text": "Durdurduğumda frenler bir metal gibi ses çıkarıyor, bir de fren ışığı yanıyor gibi oluyor.", "label": "fren"}
+{"text": "Aracı frenle çektiğimde bir yana çekiyor, ayrıca fren yapınca bir tıngırdama duyuyorum.", "label": "fren"}
+{"text": "Fren yaptığımda araç titriyor, ses de çivi çivi gibi; pedal da sanki sünger gibi.", "label": "fren"}
+{"text": "Egzozdan fısıltı gibi bir ses çıkıyor, tıraş makinesi gibi siyah duman fışkırıyor, motorun yanıp tutuştuğu hissi var, belki yanma yeri tam değil. Bu yüzden araçta bir şeyler yanlış gidiyor gibi.", "label": "egzoz"}
+{"text": "Araba çıkardığı sesle bir şeylerin yanıyor gibi, duman da baya siyah çıktı, bir de güç kaybı var.", "label": "egzoz"}
+{"text": "Egzozdan garip bir koku ve duman var, motor baya yavaşladı.", "label": "egzoz"}
+{"text": "Daha önce hiç duymadığım bir tıslama sesi var, dışarıda siyah duman çıkıyor.", "label": "egzoz"}
+{"text": "Aracım artık çok zorlanıyor, egzozdan da garip bir koku geliyor, tam olarak ne olduğunu bilemiyorum.", "label": "egzoz"}
+{"text": "Şu an motor çok titriyor, egzozdan da çok yoğun duman var, bir şeyler kesinlikle ters gitti.", "label": "egzoz"}
+{"text": "Marş bir kez bastıktan sonra sıkışıyor, yanık kokusu bile çıkıyor ama farlar yine çalışıyor.", "label": "mars"}
+{"text": "Araç aniden güç kaybediyor, tıpkı bir balonun sıkıntılı bir şekilde yavaşça boşaldığı gibi. Gaz verince bir “fısıltı” sesi duyuyorum, sanki motor içinde bir şey fısıldıyor ve yanıcı bir kokuyla birlikte mavi bir sis çıkıyor.", "label": "turbo"}
+{"text": "Direksiyonun çok ağır döndüğünü fark ettim, bazen de içinde bir titreme gibi bir ses duyuyorum. Bazen direksiyon kendi kendine merkeze dönmüyor ve bu yüzden park ederken de zorlanıyorum.", "label": "direksiyon"}
+{"text": "Sokakta sabahları marşa basınca motor zayıf ses çıkarıyor, farlar sanki yavaş yanıyor ve akü lambası sürekli yanıyor. Güneşin açıldığı zaman bile motor başlatmakta zorlanıyor, tık tık sesi duyuyorum.", "label": "aku"}
+{"text": "Motor ışığı sürekli yanıyor ve yakıt tüketimi aniden arttı. Rölanti hafif dalgalanıyor, egzozdan yoğun bir koku geliyor. Bu yüzden servise gidip kontrol ettirmek lazım.", "label": "lambda"}
+{"text": "Fren basınca araba hafifçe gıcırdayıp bir yana çekiyor, direksiyon da biraz titredi. Sanki frenlerde bir şey bozulmuş gibi hissediyorum.", "label": "fren"}
+{"text": "Bazen vites değiştiğinde ani bir vuruntu hissediyorum, otomatik sürüşte ise motor yüksek devirde kalsın gibi bir şey oluyor. D koluna basınca bile arabam hareket etmiyor gibi, sürekli aynı viteste takılıyor ve şanzımdan uğultu geliyor.", "label": "sanziman"}
+{"text": "Kara ışık yanıp duruyor, fren pedalım titredi, sanki frenlerim kaybolmuş gibi hissediyorum.  \n\n(Çizelge: “ABS lambası yanıyor” ve “fren yaparken pedal titreşiyor” belirtilerini içeriyor, ama detaylı teknik isimleri ve tam listeden söz etmiyor.)", "label": "abs"}
+{"text": "Araba motorundan üstten hafif bir cırlama duyuyorum, rölantide sık sık tıkırtılı bir ses çıkıyor. Triger kapağının yağlı olduğu da fark ettim.", "label": "triger"}
+{"text": "Vites geçerken motor çok zorlanıyor, yanık bir kokuyla birlikte pedalı da alttan kalkıyor gibi hissediyorum.", "label": "debriyaj"}
+{"text": "Araç yakıtı çok fazla tüketiyor, motor hafif dalgalanıyor ve sürekli bir duman çıkıyor. Bu yüzden yakıt tüketimini artıran bir şey olabilir.", "label": "lambda"}
+{"text": "Aracım aniden güçsüz oldu, gazı verince içinde bir çığlık sesi duyuyorum ama tam olarak ne olduğunu bile bilmiyorum. Ayrıca motor yağının çok hızlı tükenmesi ve yanından mavi duman çıkması da fark ettim.", "label": "turbo"}
+{"text": "Vitesi geçerken motor devirleri dalgalanıyor, bazen ani yükselip sonra da düşüyor, sanki motorun torku dalgalanıyor gibi. Sanırım şanzımanda bir tutam yağ eksikliği ya da tork konvertöründe bir sıkıntı var.", "label": "sanziman"}
+{"text": "Araba park yerinde yanıyor, motor sesleri normalden sıkı ve biraz tıkırtıyor.", "label": "yag"}
+{"text": "Frenle bastığımda bir gıcırdayış duyuyorum, sanki direksiyon biraz titriyor ve arka ışıklar yanıyor. Sanırım bir parça sıkışmış ya da balastı değişmesi lazım.", "label": "fren"}
+{"text": "Aracım sağa çekiyor, sürüşte hafifçe sallanıyor, torku da eksik gibi geliyor.", "label": "lastik"}
+{"text": "Akü lambası sürekli yanıyor, farlar seyir halinde kararıyor, motor çalışırken akü boşalıyormuş gibi görünüyor. Kayış sesi geliyor, elektronik parçalar kendiliğinden kapanıyor, araç yolda durduktan sonra yeniden çalışmıyor; radyo ve ekran da kesiliyor.", "label": "alternator"}
+{"text": "Klima açtığımda motor biraz sıkılıyor, hava da pek soğumuyor.  \nKlima çalışırken bir tıkırtı duyuyorum, bazen de kötü bir koku çıkıyor.", "label": "klima"}
+{"text": "Motor çok gürültü yapıyor ve sanki sıvı kaybediyor gibi hissediyorum. Kırk dakika sonra park yerinde yanık bir iz var, sanki arıza var.", "label": "yag"}
+{"text": "Aracım aniden güçsüz kaldı, mavi duman çıkıyor ve yağım sanki hiç bitmiyor gibi hızlıca azalıyor. İstemeden hızlandığında bir de ıslık gibi sesler çıkıyor.", "label": "turbo"}
+{"text": "Yüksek hızda direksiyon sallanıyor ve araç bir tarafa sürüklüyor, sanki bir yerden tutunuyor gibi. Bir taraftan hava çıkıyor gibi hissediyorum, lastik sanki patlamaya hazırlanıyor.", "label": "lastik"}
+{"text": "Aracım şehir içi giderken sürekli “hadi, fena” diye bir ses çıkartıyor, motor da aniden yavaşlayıp tekrar hızlanıyor, fırça gibi bir fan her zaman hızlı çalışıyor. Üç dakikada bir “yine rejenerasyon” diyerek yavaşlıyor, ben de birden “akıtı sık sık dolu” gibi hissediyorum.", "label": "dpf"}
+{"text": "Sabah motoru çalıştırırken sık sık zor basıyor, tık tık diye çıkıyor ve bir de ışıklar silik yanıyor. Geriye baktığımda, şarj lambası yanıp duruyor ve akü muhtemelen de bitmiş.", "label": "aku"}
+{"text": "Araçta bir şeyler ters gitti; direksiyon kontrolü yok, hızlanırken tekerlekler tıklıyor, bazen de direk fren pedalına vurunca sanki vücudum sarsılıyor.", "label": "abs"}
+{"text": "Sabah motoru çalıştırmakta zorlanıyor, ışıklar sönük yanıyor.", "label": "aku"}
+{"text": "Alt kısmından çıkan duman ve yüksek bir ses, arabada biraz hafifliyor gibi hissediyorum. Bence motorun bir şeyini kontrol ettirsem iyi olur.", "label": "egzoz"}
+{"text": "Aracım şehir içinde çalışırken egzozdan garip bir ses geliyor ve motorun yanıp sönen ışığı sürekli yanıyor. Yakıtım normalden fazla alıyor ve motor yağının seviyesi yüksek görünüyor.", "label": "dpf"}
+{"text": "Klima açınca evin içinde tıkırtı çıkıyor, hava da biraz sıcak çıkıyor, belki kompresör takıntısı yapıyor.", "label": "klima"}
+{"text": "Çukurdan geçerken bir tak tak sesi duyuyorum, biraz da sürüş sırasında araç sallanıyor gibi hissediyorum. İnanıyorum ki bir şeyde bir sızıntı var, direksiyon biraz gevşek gibi.", "label": "suspansiyon"}
+{"text": "Egzozdan çok yüksek bir ses çıkıyor, aracım sanki bir tütünle yandı gibi koku veriyor. Bu yüzden hızlanmakta zorlanıyorum, sanki motorun içinde bir şeyler çarpıyor.", "label": "egzoz"}
+{"text": "Araba birden bire hırıltılı bir ses çıkarıyor, sanki bir şey yanıyormuş gibi kokuyor, hızlanmakta da zorlanıyorum.", "label": "egzoz"}
+{"text": "Egzozdan garip bir duman var, hatta bazen çürük yumurta gibi bir koku alıyorum, motor güç kaybediyor.", "label": "egzoz"}
+{"text": "Çıktığı ses çok yüksek, alt kısımdan bir vuruntu geliyor, araç bir türlü ivme alamıyor.", "label": "egzoz"}
+{"text": "Şu anda arabam çok gürültülü, egzozdan gelen kokular beni rahatsız ediyor, hız tutmuyor.", "label": "egzoz"}
+{"text": "Bir anda arabamda metalik bir çarpma sesi duydum, duman da çıkıyor, hızlamaya çalıştığımda çöküyor.", "label": "egzoz"}
+{"text": "Akü lambası sürekli yanıyor, farlar seyir halinde kararıyor, motor çalışırken akü boşalıyor ve kayış sesi duyuluyor. 〰️️\n\n(Note: The request was to not use listed words and give a vague daily Turkish statement, but the answer must be short. The above reflects a brief, informal description.)", "label": "alternator"}
+{"text": "Egzozdan gelen o yüksek sesle birlikte, arabanın altından garip bir gürültü çıkıyor, sanırım motorun içinde bir şeyler yanıyor. Belki yakıt sistemiyle ilgili bir sorun, ama kesin bilmiyorum.", "label": "egzoz"}
+{"text": "Araba çukurdan geçerken tak tak ses çıkarıyor, sanki bir şeyler çarpıyor gibi, ama direksiyon biraz gevşekmiş gibi hissediyorum. Bu yüzden yolda ilerlerken hafif sallanıyor ve bazen bir tutulum problemi gibi oluyor.", "label": "suspansiyon"}
+{"text": "Motor lambası hep yanıyor, benzin fazla çekiyor, aracım hırıltılı dönüyor. Bilgisayar da bir şeyler hatırlıyor gibi görünüyor.", "label": "lambda"}
+{"text": "Yüksek hızda direksiyonun alt üst oluyor, tırmalıyor, bir yöne çekiliyor ve bir kez de arka koltuğun yan tarafı şişek gibi çıkıyor. Belki de jantların biri çarpık ya da bir tarafın lastiği patlamış olabilir.", "label": "lastik"}
+{"text": "ABS ışığı yanıyor, frenlettiğimde pedal titriyor ve bir yanıp sönme var, belki de tekerlek hız sensöründe bir şeyler eksikmiş.", "label": "abs"}
+{"text": "Park yerinde yağ izleri gördüm, motor biraz tıkırdıyor ve yanık gibi bir koku çıkıyor. Sanırım yağ kaçmış olabilir.", "label": "yag"}
+{"text": "Aracımın motoru çok yavaş çalışıyor, gaz verdiğimde eski bir “sızlık” sesi duyuyorum, ayrıca egzozdan biraz mavi duman çıkıyor. Yağ seviyesinin de hızla düşmesiyle birlikte hızlanırken bir şekilde “boğuluyor” hissediyorum.", "label": "turbo"}
+{"text": "Rölantide arabam titriyor, bazen birden durup tekrar başlıyor, yakıt daha fazla alıyor. Bazen gaz verince de hiç çekmiyor, sanki motorun içinde bir şey bozulmuş gibi.", "label": "atesleme"}
+{"text": "Akü lambası sürekli yanıyor, farlar seyir halinde kararıyor. Sanırım bataryada bir sorun var.", "label": "alternator"}
+{"text": "Şu an direk aküye takılmadan motor başlatılamıyor; bazen aküye girdiğinde motor çalışıyor, ama çoğu zaman hiç ses çıkmadan kapanıyor. Sanırım motorun içinde bir sıkışma var, çünkü bir kez çarpıştığında yanık kokusu geliyor ve o kadar hızlı kapanıyor ki.", "label": "mars"}
+{"text": "Egzozdan çok yüksek bir gürültü çıkıyor ve biraz çamur gibi karanlık bir duman çıkıyor, sanırım yakıt sisteminde bir sorun var. Kaza sonrası bu şekilde bir şey beklenmedi, belki de bir kaç delik ya da sızıntı olabilir.", "label": "egzoz"}
+{"text": "Egzozden bir türlü durmayan ses var, neredeyse bir motor gibi çınlıyor, ben de bir şeyler yanıyor sandım ama ne olduğunu bilmiyorum.", "label": "egzoz"}
+{"text": "Aracın arkasından bir hışırtı duyuyorum, duman da koyu bir renk almış, sanki bir şeyler yanıyormuş gibi.", "label": "egzoz"}
+{"text": "Kaza sonrası çıkardığımız o garip ses hâlâ var, sanki bir delik var gibi, ama ben tam olarak ne olduğunu söyleyemem.", "label": "egzoz"}
+{"text": "Büyük bir sesle çıkan egzoz, havada yanık bir koku var, bir şeyler tıkanmış olabilir mi acaba?", "label": "egzoz"}
+{"text": "Şimdi bir anda motor güç kaybetti, egzozdan çıkan duman da çok koyu, ses de bayağı yüksek.", "label": "egzoz"}
+{"text": "Biri gibi, direksiyon tutununca aracın bir an önce kayıp çıkıyor gibi hissettiğim bir durum var. Bir de frenleri basınca pedal hafifçe sallanıyor ve yanıp yanıp bir ışık belki de gözlemlediğim gibi.", "label": "abs"}
+{"text": "Araba tırnağı gibi zayıf, gaz verdiğimde “şıngır” sesi çıkıyor, motor yağının neredeyse hiç kalmıyor. Turbo gibi bir şey çalışmıyor gibi görünüyor, ama belki de silindirlerde bir sıkıntı olabilir.", "label": "turbo"}
+{"text": "Hızlı dönmeye başladığımda direksiyon sallanıyor, sanki bir tarafı çeken bir şey var. Birden lastiklerde bir şişlik belirdi, hava da düşmeye başladı.", "label": "lastik"}
+{"text": "Soğutma açtığımda içinde kötü bir koku var ve motor biraz zorlanıyor gibi hissediyorum. Belki de bu yüzden hava çok ılık çıkıyor.", "label": "klima"}
+{"text": "Hızla giderken arabam aniden tekliyor ve motoru kapatıp tekrar çalıştırmak için uzun süre marşa basmam gerekiyor. Bazı zamanlar yakıt kokusunu hissediyorum ama silindirler çalışmıyor gibi görünüyor.", "label": "yakit"}
+{"text": "Arabamın motoru aniden çok yavaşladı, gaz verince hafif bir “hırıldama” sesi duyuyorum; aynı zamanda egzozdan hafifçe mavi duman çıkıyor gibi. Sanırım yağ seviyesinde bir sorun var ve bu yüzden hızlanırken zorlanıyorum.", "label": "turbo"}
+{"text": "Motoru çalışırken ışıklar yanıyor, yakıt çok fazla alıyor gibi hissediyorum ve hafif bir duman çıkıyor, sanırım bir şeyler takılıyor.", "label": "lambda"}
+{"text": "Araç çok fazla benzin harcıyor, motor hafif titriyor ve egzozda garip bir koku var.", "label": "lambda"}
+{"text": "Motor ışıkları yanıyor, rölanti dalgalı, bir de dışarıdan ince bir duman çıkıyor.", "label": "lambda"}
+{"text": "Şu an çalışırken bir şeyler yanıyor gibi, yakıt tüketimi birden artınca, araba yavaşladı.", "label": "lambda"}
+{"text": "Araba çalışırken bir şeyler takılıyor, rölanti dalgalı ve benzin doluyken bile yakıt bitiriyor.", "label": "lambda"}
+{"text": "Motor ışığı yanıyor, sürüş sırasında aniden güç kaybı ve egzozda yoğun bir koku hissediyorum.", "label": "lambda"}
+{"text": "Sabah motoru zor çalışıyor, tık tık sesiyle dönmüyor ama kontak açınca ampuller titredi.", "label": "aku"}
+{"text": "Arabanın yanında yağ gibi bir lekecik varmış, motorun içinde bir şeyler yanıyor gibi bir koku geliyor. Sanırım içindeki sıvı tükeniyor, belki de bir şey sızıyor.", "label": "yag"}
+{"text": "Motorun sürekli yanıp yanmadığını hissediyorum, yakıtın normalden fazla gittiğini fark ettim. Çevremde bir şeyler yanıyormuş gibi kokuyor ve arka seste hafif bir dalgalanma var.", "label": "lambda"}
+{"text": "Araçta bir şeyler ters gidiyor; hız vermeye çalıştığımda motor devri yükseliyor ama hızlanmıyor, arka kısmı biraz yanık kokuyor.", "label": "debriyaj"}
+{"text": "Aracım motorun sıcaklığını gösteren ışık kırmızıya dönüyor, kaputtan fışkırıyor, su biriktiği izlenimini veriyor. Sanırım suyun bir kısmı eksilmiş, bu yüzden motorun sıcaklığı artıyor.", "label": "sogutma"}
+{"text": "ABS lambası yanıyor, fren yaparken pedal titriyor ve bir ışık yanıyor. ESP lambası da yanıp sönüyor, kaygan zeminlerde sürüşte dengesiz hissediyorum.", "label": "abs"}
+{"text": "Fren yapınca hafif bir gıcırdayış duyuyorum, bence direksiyon biraz dertli ve arka tarafta bir ses çıkıyor.", "label": "fren"}
+{"text": "Direksiyonu çevirirken çok zor geliyor ve bazen hafif bir tıkırtı duyuyorum. Parkta direksiyonun hafifçe kayma gibi bir hissi var.", "label": "direksiyon"}
+{"text": "Araba birden güçsüz kalıp, hızlanırken gözüne binen mavi dumanla birlikte tıpkı bir çamur tırnak sesi çıkıyor, yağ sanki bir çamur gibi hızla tüketiliyor.", "label": "turbo"}
+{"text": "Araba sürerken bir yerlere girdiğimde sürekli bir “patlat” sesi çıkar ve yol alırken bir tutam titreme var. Bazen tırnak gibi bir gürültü duyuyorum, ama ne kadar ciddi, emin değilim.", "label": "suspansiyon"}
+{"text": "Yol üstünde bir şey geçince arabam birden “klik‑klik” yapıyor ve sarsılıyor, ne olur bu?", "label": "suspansiyon"}
+{"text": "Sürüşte bir an aniden titriyor, virajda sanki süspansiyon kayıyor gibi", "label": "suspansiyon"}
+{"text": "Araba çukurdan çıktığında bir patlama sesi geliyor, direksiyon da hafif gevşek", "label": "suspansiyon"}
+{"text": "İçeriden gelen hafif bir tıkırtı ve yol alırken sarsıntı var, yağ da kaçıyor galiba", "label": "suspansiyon"}
+{"text": "Şoför koltuğundan bakınca arka kısmı titriyor, özellikle fren yaptığımda bir ses duyuyorum", "label": "suspansiyon"}
+{"text": "Aracım aniden güçsüz kalıyor, gaz verdiğimde bir çığlık gibi ses çıkıyor ve duman mavi geliyor, sanırım yağ sıkıntısı var. Bu durumda turbo'nun çalışmadığını düşünüyorum ama kesin bilmiyorum.", "label": "turbo"}
+{"text": "Aracım yakıtı birden fazla tüketiyor, tork düşmüş gibi geliyor. Ayrıca egzozdan çok kötü bir koku çıkıyor.", "label": "lambda"}
+{"text": "Yüksek hızda sürerken aracı sık sık tekliyor, motor aniden duruyor ve vızıltı gibi bir ses geliyor. Marşa bastığımda yakıtın kokusu hissediyor, ama neyse çalışmaya devam ediyor.", "label": "yakit"}
+{"text": "Arabanın marşını bastığımda, takırtı çıkar, ama motor döndürmem, sanki bir şey sıkışmış gibi hissediyorum.", "label": "mars"}
+{"text": "Araba çukurdan geçerken “tak tak” sesiyle sallanıyor, sürüş sırasında hafif bir tıklama ve viraj alırken hafif yalpalama hissediyorum. Ayrıca sürüş ortasında bir noktadan yağın hafifçe dışarı akması gibi bir durum fark ettim.", "label": "suspansiyon"}
+{"text": "Arabanın içinde bir yandan garip bir tatlı koku çıkıyor, sanki bir çikolata fırınından geliyormuş gibi. Bir de motorun sıhhiyle bir şeyler ters gidiyor; biraz ısınıyor ve bir noktadan sonra garip bir şekilde buhar gibi bir şey çıkıyor gibi hissettim.", "label": "sogutma"}
+{"text": "Klima açınca evimizde kötü kokulu bir hava oluyor, tıkırtı gibi sesler duyuyorum ve motor da çok zorlanıyor. Sanırım hava akışında bir tıkanıklık var.", "label": "klima"}
+{"text": "Sanki direksiyon çok sıkı, sürerken bir yana çekiliyor, biraz da lastik yan tarafında bir şişlik var. Sanırım jantların bir yerinde bir darbe olmuş.", "label": "lastik"}
+{"text": "Aracım şehir içinde sık sık “ekstrem” bir ses çıkartıyor, motorun yanına bakınca yaşıyormuş gibi hissediyorum, bazen gazı basınca da tıkırtı tıkırtı oluyor. Yakıt dolduğunda bile hep daha fazla çekiyor, sanki motoru çok fazla su alıyor gibi.", "label": "dpf"}
+{"text": "Şehir içinde durmadan duman çıkıyor, motor soğukken titriyor, yakıt doldurduğumda dahi çekiş azalıyor.", "label": "dpf"}
+{"text": "Aracım bir anda güç kaybediyor, gazı açınca takılıyor, yağ seviyesi yükseliyor, bir şey yanıyor gibi.", "label": "dpf"}
+{"text": "Kısa yolculukta sürekli 'regen' diye bir şey oluyor, fan hiç durmuyor, egzozdan garip ses geliyor.", "label": "dpf"}
+{"text": "Düz yolda giderken aniden motor soğuk kalıyor, gaz pedalı boşluk bırakıyor, yakıt harcaması artmış.", "label": "dpf"}
+{"text": "Aracım acil durum moduna girince ışıklar yanıyor, egzozdan çatırtı geliyor, motor su almış gibi hissettiriyor.", "label": "dpf"}
+{"text": "Araç çok yavaş dönüyor, gazı verince içinde bir hırıltı çıkıyor. Mavi duman çıkıyor ve motor yağı hemen tükeniyor.", "label": "turbo"}
+{"text": "Araba kaygan zeminlerde kontrolü zorlaşıyor, fren yapınca pedal sallıyor ve ışık yanıyor.", "label": "abs"}
+{"text": "Motorun ön tarafından gelen garip bir cırlama sesi var, tıkırtılar da sık sık çıkıyor, belki yağ tıkanmış ya da bir şeyde gerginlik var. Bu yüzden marş basıyor ama motor gerçekten çalışmıyor.", "label": "triger"}
+{"text": "Araba sürerken motorun önünden cırlama sesleri çıkıyor, rölantide sık sık tıkırtıyor ve bir de motor kapağından hafif bir tıklama duyuluyor. Tamirciye “motor başlatılmadan önce tıkırtı oluyor” diye yazabilirim.", "label": "triger"}
+{"text": "Motorum çok ısınıyor, sıcaklık göstergesi kırmızıya geçiyor ve yanından hafifçe tatlı bir duman çıkıyor. Park yerinde bir yerden sıvı birikti, kalori üflemiyor.", "label": "sogutma"}
+{"text": "Motor başlatınca bir çılçıl ses çıkıyor, tıkırtı var ama çalışmıyor, belki yağ sızıntısı yüzünden.", "label": "triger"}
+{"text": "Park yerinde motorun yanına yağ lekesi çıkmış, motor sesleri de normalden biraz sertleşmiş gibi görünüyor.", "label": "yag"}
+{"text": "Aracım hafifçe sallıyor, bir yanda hafif bir tıkırtı duyuyorum, sanırım motorun bir yerinde bir sıkıntı var. Bence servisle görüşmem gerekiyor.", "label": "suspansiyon"}
+{"text": "Araba yol alırken sanki bir şeyler takılıyor, bir de süspansiyon çok sertleşti gibi hissediyorum.", "label": "suspansiyon"}
+{"text": "İnternette gördüm, süspansiyon yağı sızıyormuş demişler, ben de benzin kapağının yanında yağ gibi bir şey gördüm.", "label": "suspansiyon"}
+{"text": "Sürüş sırasında birdenbire arabam yokuşta takırdıyor, direksiyon da biraz gevşek geldi.", "label": "suspansiyon"}
+{"text": "Yol çukuruna çarptığımda arabam bir anda sarsılıyor, bir şeyler takıp duruyor sanki.", "label": "suspansiyon"}
+{"text": "Şoför koltuğundan bakınca frenler hâlâ aynı ama ön tekerlekler yolun içinde dalga dalga hareket ediyor.", "label": "suspansiyon"}
+{"text": "Kısa süre önce akümü değiştirdik ama şimdi marş açılmadan motor çalışmıyor, bazen de farlar yanıyor ama kontakta hiçbir ses çıkmıyor; marş motoru bir kez bastıktan sonra sıkışıyor gibi, belki de bir şey takılı kalmış. Biraz yanık koku da oluyor, bu yüzden belki de bir elektrikli parçanın sorunlu olduğunu düşünüyorum.", "label": "mars"}
+{"text": "Farlarım sürekli yanıp sönerken, elektrikli parçalarım da bazen kendi kendine kapanıyor. Sonra arabam yolda durup tekrar çalışmıyor, akım kesiliyor.", "label": "alternator"}
+{"text": "Aracım parkta kaldığı sırada motorun sesini duydum, aniden tıkır tıkır sesler çıkıyor, yanıp yanıp yağlı bir kokudan dolayı tükendiğini anladım.", "label": "yag"}
+{"text": "Araba sürüş sırasında biraz sallanıyor, tıkırtı gibi bir ses çıkıyor, hızlanmakta zorlanıyor. Bunun yanı sıra, motorun normalde durduğu yerde bile hafifçe gürültü yapması fark ediyorum.", "label": "atesleme"}
+{"text": "Aracım yola çıkınca motor titriyor, gaz verince de zorlanıyor, bir şeyler yanıyor sanki", "label": "atesleme"}
+{"text": "Şu anda rölantide bir hışırtı duyuyorum, birden bire motor tekliyor ve arabam sarsılıyor", "label": "atesleme"}
+{"text": "Gaz pedalına bastığımda motor güç vermiyor, motorun içinde bir tıkırtı var", "label": "atesleme"}
+{"text": "Araç durdukça motor hafifçe ses çıkarıyor, hızlanırken de çöküyor, yakıt da bir anda çok geliyor", "label": "atesleme"}
+{"text": "Şoför koltuğunda otururken motor bir anda sallanıyor, rölanti dalgalı ve motor ışığı yanıp sönüyor", "label": "atesleme"}
+{"text": "Araç sürüş sırasında aniden güçsüzleşiyor, gaz verince de içinde bir tıkır tıkır ses duyuyorum. Bir de egzozdan sürekli mavi bir duman çıkıyor, sanki yağ yanıyor gibi.", "label": "turbo"}
+{"text": "Yüksek hızda direksiyon sık sık sallanıyor, aracım bir tarafa çarpıyor ve bir yandan da tek tarafı eriyor. Belki de jantın biraz çarpık olduğu için bu gibi oluyor.", "label": "lastik"}
+{"text": "Egzozdan koyu bir duman çıkıyor, sanki tütün dumanı gibi. Şu an bakmak zorundayım, belki yanıyor.", "label": "egzoz"}
+{"text": "Direksiyonun hafifçe sallandığını fark ettim, sanki bir yana çekiliyormuş gibi. Aynı anda bir kenardan havayı salıp, tırnağına bir şişlik gibi bir şeyin takılı olduğunu gördüm.", "label": "lastik"}
+{"text": "Arabam son zamanlarda yakıtı çok fazla tüketiyor, motor ışığı hep yanıyor ve hafif bir hırçınlama hissediyorum. Belki spark plug’lar bozulmuştur.", "label": "lambda"}
+{"text": "Egzozdan çok yüksek bir uğultu duyuyorum, aynı zamanda araç çok az güçle ilerliyor ve tükendiğinde bir şekilde tıkanmış gibi hissediyorum. Bence belki yakıt sisteminde bir sorun var, ama tam emin değilim.", "label": "egzoz"}
+{"text": "Aracım sıcağa karşı dayanmaz hâlâ; motor çalışırken çok sıcaklaşıyor, sanki içi yakmak gibi. Bir süre sonra kapuktan hafif bir buhar çıkıyor ve park yerinde yerde bir sıvı kalıntısı görüyorum.", "label": "sogutma"}
+{"text": "Motorun önünden gelen o cırlama sesini duydum, tıpkı eski bir çakıl gibi; aynı zamanda marş basınca bile motor çalışmıyor gibi hissediyorum, belki de bir yağ sorunu var.", "label": "triger"}
+{"text": "Sabah motoru zor çalışıyor, tık tık ediyor ama hiç dönmüyor; ışıklar da sanki yorgun gibi yanıyor. Sanırım batarya ya da şarj sistemiyle bir sorun olabilir.", "label": "aku"}
+{"text": "Sabah marşa bastığımda motor çalışmıyor, tık tık sesi çıkar, farlar bile sönmüş gibi yanıyor. Sanırım aküyle ilgili bir şeyler ters gidiyor.", "label": "aku"}
+{"text": "Rölanti çalışırken arabanın hafifçe titrediğini fark ettim, bazen de bir an için motor güç kaybediyor gibi hissediyorum.", "label": "atesleme"}
+{"text": "Araç dururken titriyor, bir anda sanki motor boğulmuş gibi kesiliyor ve gaz verince zorlanıyor.", "label": "atesleme"}
+{"text": "Rölantide bir şeyler garip, motor dalgalanıyor, bir de yakıt harcaması baya artı.", "label": "atesleme"}
+{"text": "Araba yoldayken aniden sarsılıyor, motor güç vermeyi bırakıyor, kontrol lambası yanıyor.", "label": "atesleme"}
+{"text": "Şoför koltuğunda otururken motor hafifçe titriyor, birden fren yapınca bile çekiş kaybı oluyor.", "label": "atesleme"}
+{"text": "Motor rölantide dalgalanıyor, bir an durup bir an kalkıyor, yakıt tüketimim de çok yükseldi.", "label": "atesleme"}
+{"text": "Rölantide motorun hafifçe titrediği bir sürüş yaşadım, bazen de motor aniden tekliyor. Araç ilerlerken biraz sarsıyor ve gaz verince beklediğim gibi hızlanmıyor.", "label": "atesleme"}
+{"text": "Benzin direk dolma gibi motorumdan bir cırlama sesi çıkıyor, tıknatıyor ama marş basınca bile çalışmıyor.", "label": "triger"}
+{"text": "Şöyle bir şey oluyor: anahtar çevirince hiçbir ses yok ama farlar yanıyor, bir kere marş basınca takırtı geliyor ama motor çalışmıyor. Bazen motoru ittirince çalışıyor, ama genelde bu durum sürmüyor.", "label": "mars"}
+{"text": "Fren yapınca bir gıcırdayış duyuyorum, pedal da çok yumuşak.", "label": "fren"}
+{"text": "Yüksek hızda direksiyon hafifçe sarsıyor, tıpkı bir rüzgârın fısıldadığı gibi. Belki de tekerlekler bir yerlere sıkışmış, bu yüzden arıza var.", "label": "lastik"}
+{"text": "Yüksek hızda aracım sarsılıyor, direksiyon da titriyor, belki bir şey takılmıştır.", "label": "lastik"}
+{"text": "Aracım bir tarafta çekiyor, bir de lastiğimden ses geliyor; neyin sorunu olabilir?", "label": "lastik"}
+{"text": "Sürüşte birden sağa doğru kayıyor, lastiğin yanında bir şişlik fark ettim.", "label": "lastik"}
+{"text": "Direksiyon hafifçe titriyor, özellikle otoyolda, lastiklerde bir şey eksik gibi.", "label": "lastik"}
+{"text": "Araç yüksek hızda titriyor, tekerlekler bir şeyle sıkışmış gibi hissediyorum.", "label": "lastik"}
+{"text": "Klima açınca sık sık kötü bir koku çıkıyor ve hava çok soğumuyor. Aynı zamanda motor zorlanıyor ve hafif bir tıkırtı duyuyorum.", "label": "klima"}
+{"text": "Yüksek hızda direksiyonumu tutmak zor oluyor, sanki bir yandan çarpıntı yapıyor.  \nSağa hafifçe çekiyormuş gibi hissediyorum, belki de jantlar biraz bozuk olabilir.", "label": "lastik"}
+{"text": "Direksiyon çok zor ve bir kez çevirirsen bir inleme sesi çıkıyor, bazen de direksiyon kendiliğinden merkeze dönmüyor. Park ederken de direksiyonu döndürmekte zorlanıyorum.", "label": "direksiyon"}
+{"text": "Motor başlatıldığında motor kapağından hafif bir tıkırtı geliyor ve arka taraftan bir çınlama sesi duyuyorum.", "label": "triger"}
+{"text": "Yüksek hızda giderken birden araç yanıp duruyor, gazı bastıktan sonra hemen çalışmıyor, sanki motorun içinde bir şey sıkışmış gibi. Bu arada yakıt kokusu hafif, ama depo dolu olduğunda bile bu durum oluyor, sanırım bir yerde bir tıkanıklık var.", "label": "yakit"}
+{"text": "Bazen araba hiç başlamıyor, bazen de takırtı yapıp boş dönüyor; farlar yanıyor ama kontakta hiçbir ses çıkmıyor. Sanırım aküyle ilgili bir şey var.", "label": "mars"}
+{"text": "Araç çukurdan geçerken tak tak ses çıkarıyor, sanki bir şeyin içinde sıkışıyor gibi; ayrıca direksiyon hafifçe gevşek ve sallanıyor, tıkırtı gibi bir ses de geliyor. Bu durumda, belki de süspansiyon parçalarıyla ilgili bir sorun olabilir.", "label": "suspansiyon"}
+{"text": "Yüksek hızda direksiyonun titredi ve arabanın bir tarafa çarpıyormuş; sanki lastiklerden birinde bir şeyler yanıyor gibi. Belki de jantlar bir şeyleri çarpıyor, bu yüzden araç sağa kayıyor.", "label": "lastik"}
+{"text": "Aracımın yakıtı çok hızlı bitiyor, motor sanki dalga dalga çalışıyor ve egzozdan garip bir koku çıkıyor. Sanırım bir şey bozuldu, belki de motorun içinde bir şeyler yanıyor.", "label": "lambda"}
+{"text": "Egzozdan yüksek ses çıkıyor ve siyah duman da çıkıyor, sanırım motorun içinde bir şeyler yanıyor.", "label": "egzoz"}
+{"text": "Şu an aküm tam yeni ama motorum çalışmıyor, bir kere çarpma sesini duyuyorum ama sonra takılacak gibi bir ses çıkıyor, bazen de çalışıyor gibi görünüyor. Farlar yanıyor ama şarj kısmından hiçbir ses gelmiyor.", "label": "mars"}

@@ -58,10 +58,15 @@ TEACHER_CANDIDATES = ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "openai/
 def pick_model(client, state, env_name: str, candidates: list[str], role: str) -> str:
     """Ortam değişkeni verilmişse onu, yoksa adaylardan çalışan ilkini seçer (kısa deneme çağrısıyla)."""
     forced = os.environ.get(env_name)
+    cached = state.get("models", {}).get(env_name)
+    if cached and not forced and cached in candidates:
+        return cached            # her açılışta boşuna deneme çağrısı yapma
     for name in ([forced] if forced else candidates):
         try:
             with_quota(lambda: client.chat(name, [{"role": "user", "content": "Merhaba, tek kelime cevap ver."}],
                                            max_tokens=20), state)
+            state.setdefault("models", {})[env_name] = name
+            save_state(state)
             return name
         except ModelUnavailable:
             log(f"{role}: '{name}' bu hesapta yok/kapalı, sıradaki deneniyor...")
@@ -163,7 +168,7 @@ def run_episode(client, kb, model, state, rng, sim_model, teacher_model):
     ranked = predict(model, text)
     asked, questions = set(), 0
     while (ranked[0][1] < CONF or ranked[0][1] - ranked[1][1] < MARGIN) and questions < MAX_QUESTIONS:
-        symptom = ask_followup(kb, ranked, asked)
+        symptom = ask_followup(kb, ranked, asked, model)
         if symptom is None:
             break
         asked.add(symptom)
@@ -225,7 +230,7 @@ def retrain() -> None:
     out = subprocess.run([sys.executable, "train.py"], capture_output=True, text=True,
                          encoding="utf-8", errors="replace", env=env)
     for line in (out.stdout or "").splitlines():
-        if any(k in line for k in ("Doğruluk", "kaydedildi", "korundu", "kötü")):
+        if any(k in line for k in ("Doğruluk", "kaydedildi", "korundu", "kötü", "düşüş", "karışan")):
             log("  " + line.strip())
     if out.returncode != 0:
         log("  eğitim hatası: " + (out.stderr or "")[-300:])
@@ -241,8 +246,10 @@ def main() -> None:
     ap.add_argument("--mock-quota-every", type=int, default=0, help="sahte kota hatası sıklığı (deneme)")
     ap.add_argument("--mock-quota-wait", type=float, default=2.0)
     ap.add_argument("--seed", type=int, default=None)
-    ap.add_argument("--hard", action="store_true",
-                    help="simüle sürücü daha belirsiz ve kısa anlatsın (bot kolay doğru bilirse kullan)")
+    ap.add_argument("--easy", action="store_true",
+                    help="kolay mod: sürücü belirtileri neredeyse aynen anlatır (akış denemesi için). "
+                         "Varsayılan artık zor mod; kolay modda %%100 doğruluk bir şey ölçmez.")
+    ap.add_argument("--hard", action="store_true", help=argparse.SUPPRESS)   # eski komutlar bozulmasın
     ap.add_argument("--list-models", action="store_true", help="hesabındaki modelleri listele ve çık")
     args = ap.parse_args()
 
@@ -252,7 +259,7 @@ def main() -> None:
         return
     if not (MODELS / "ariza_model.joblib").exists():
         sys.exit("Önce temel modeli eğit: python run_pipeline.py")
-    if args.hard:
+    if not args.easy:
         difficulty["extra"] = HARD_EXTRA
     kb = load_kb()
     rng = random.Random(args.seed)
