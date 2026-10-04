@@ -29,8 +29,9 @@ Karar küçük bir ML modelinden gelir (~0.1 MB); LLM yalnızca eğitim verisi �
   yeni model, elle yazılmış test setinde eskisinden kötüyse kaydedilmez.
 - Günlük kota dolunca `data/selfplay_state.json` içine bekleme süresi yazılır; uygulama kapansa bile
   yeniden başlatınca bekleme biter, döngü devam eder. Konuşma kayıtları: `data/selfplay_log.jsonl`.
-- Model adları: `SIM_MODEL` (varsayılan llama-3.1-8b-instant), `TEACHER_MODEL` (llama-3.3-70b-versatile).
-  Groq model adlarını değiştirirse bu değişkenlerle güncelle.
+- Modeller otomatik seçilir: hesabında çalışan ilk aday kullanılır (llama-3.x ücretsiz hesapta kapalı olabilir,
+  o zaman openai/gpt-oss-20b / 120b denenir). Elle seçmek için `SIM_MODEL`, `TEACHER_MODEL` ortam değişkenleri;
+  hesabındaki modeller için `python self_play.py --list-models`.
 
 ## Akış
 1. `generate_data.py`  → `data/synthetic.jsonl` (LLM veya şablon)

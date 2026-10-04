@@ -15,6 +15,10 @@ import urllib.request
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 
+class ModelUnavailable(Exception):
+    """Model yok ya da bu hesapta kapalı (HTTP 404 / model_not_found)."""
+
+
 class RateLimit(Exception):
     """Kota doldu. wait: kaç saniye sonra tekrar denenmeli. daily: günlük kota mı?"""
 
@@ -48,8 +52,13 @@ class GroqClient:
 
     def chat(self, model: str, messages: list[dict], temperature: float = 0.9,
              max_tokens: int = 400) -> str:
-        payload = json.dumps({"model": model, "messages": messages,
-                              "temperature": temperature, "max_tokens": max_tokens}).encode()
+        body = {"model": model, "messages": messages, "temperature": temperature,
+                "max_tokens": max_tokens}
+        if model.startswith("openai/gpt-oss"):
+            # Akıl yürütme modelleri: düşünme tokenları max_tokens'ı yer, cevap boş kalabilir.
+            body["reasoning_effort"] = "low"
+            body["max_tokens"] = max(max_tokens, 1200)
+        payload = json.dumps(body).encode()
         req = urllib.request.Request(GROQ_URL, data=payload, headers={
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
@@ -64,9 +73,20 @@ class GroqClient:
                 wait = _parse_wait(e.headers, body)
                 daily = "per day" in body.lower() or "TPD" in body or "RPD" in body or wait > 180
                 raise RateLimit(wait, daily, body[:200]) from None
+            if e.code in (400, 403, 404) and ("model" in body.lower()):
+                raise ModelUnavailable(f"{model}: {body[:200]}") from None
             raise RuntimeError(f"Groq HTTP {e.code}: {body[:300]}") from None
         self.tokens_used += data.get("usage", {}).get("total_tokens", 0)
-        return data["choices"][0]["message"]["content"].strip()
+        content = (data["choices"][0]["message"].get("content") or "").strip()
+        if not content:
+            raise RuntimeError(f"{model} boş cevap döndürdü (akıl yürütme modeli token'ı bitirmiş olabilir).")
+        return content
+
+    def list_models(self) -> list[str]:
+        req = urllib.request.Request("https://api.groq.com/openai/v1/models", headers={
+            "Authorization": f"Bearer {self.api_key}", "User-Agent": "ariza-bot/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return sorted(m["id"] for m in json.load(resp)["data"])
 
 
 class MockClient:

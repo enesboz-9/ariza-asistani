@@ -29,7 +29,7 @@ import joblib
 
 from chat import CONF, MARGIN, MAX_QUESTIONS, ask_followup, predict
 from common import DATA, MODELS, load_kb, read_jsonl, tr_lower
-from llm import GroqClient, MockClient, RateLimit
+from llm import GroqClient, MockClient, ModelUnavailable, RateLimit
 
 STATE_PATH = DATA / "selfplay_state.json"
 LOG_PATH = DATA / "selfplay_log.jsonl"
@@ -39,6 +39,27 @@ SHORT_WAIT = 180          # bu kadar saniyeden kısa beklemeler "dakika limiti" 
 
 def log(msg: str) -> None:
     print(f"[{datetime.now():%H:%M:%S}] {msg}", flush=True)
+
+
+# ---------------------------------------------------------------- model seçimi
+
+# Hesapta çalışan ilk modeli kullanır. Ücretsiz hesaplarda llama-3.x "enterprise" olabilir.
+SIM_CANDIDATES = ["llama-3.1-8b-instant", "openai/gpt-oss-20b", "qwen/qwen3.8-27b", "openai/gpt-oss-120b"]
+TEACHER_CANDIDATES = ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"]
+
+
+def pick_model(client, state, env_name: str, candidates: list[str], role: str) -> str:
+    """Ortam değişkeni verilmişse onu, yoksa adaylardan çalışan ilkini seçer (kısa deneme çağrısıyla)."""
+    forced = os.environ.get(env_name)
+    for name in ([forced] if forced else candidates):
+        try:
+            with_quota(lambda: client.chat(name, [{"role": "user", "content": "Merhaba, tek kelime cevap ver."}],
+                                           max_tokens=20), state)
+            return name
+        except ModelUnavailable:
+            log(f"{role}: '{name}' bu hesapta yok/kapalı, sıradaki deneniyor...")
+    sys.exit(f"{role} için çalışan model bulunamadı. 'python self_play.py --list-models' ile hesabındaki "
+             f"modelleri gör, sonra {env_name} ortam değişkenine yaz.")
 
 
 # ---------------------------------------------------------------- durum
@@ -206,16 +227,21 @@ def main() -> None:
     ap.add_argument("--mock-quota-every", type=int, default=0, help="sahte kota hatası sıklığı (deneme)")
     ap.add_argument("--mock-quota-wait", type=float, default=2.0)
     ap.add_argument("--seed", type=int, default=None)
+    ap.add_argument("--list-models", action="store_true", help="hesabındaki modelleri listele ve çık")
     args = ap.parse_args()
 
+    if args.list_models:
+        for m in GroqClient().list_models():
+            print(m)
+        return
     if not (MODELS / "ariza_model.joblib").exists():
         sys.exit("Önce temel modeli eğit: python run_pipeline.py")
     kb = load_kb()
     rng = random.Random(args.seed)
     client = (MockClient(args.mock_quota_every, args.mock_quota_wait) if args.mock else GroqClient())
-    sim_model = os.environ.get("SIM_MODEL", "llama-3.1-8b-instant")
-    teacher_model = os.environ.get("TEACHER_MODEL", "llama-3.3-70b-versatile")
     state = load_state()
+    sim_model = pick_model(client, state, "SIM_MODEL", SIM_CANDIDATES, "Simüle sürücü")
+    teacher_model = pick_model(client, state, "TEACHER_MODEL", TEACHER_CANDIDATES, "Öğretmen")
 
     # önceki oturumda kota beklemesi yarım kaldıysa bitirene kadar uyu
     if state.get("paused_until"):
