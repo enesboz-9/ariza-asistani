@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.key
+# öz-oyun çalışma dosyaları (kişisel durum ve ham konuşma günlüğü)
+data/selfplay_state.json
+data/selfplay_log.jsonl
+data/feedback_pending.jsonl

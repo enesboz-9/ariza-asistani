@@ -1,0 +1,281 @@
+{
+  "aku": {
+    "ad": "Akü zayıf / bitmek üzere",
+    "oncelik": "orta",
+    "oneri": "Akü voltajını ölçtürün (12.4 V altı zayıftır). Kutup başlarını temizleyin. 4-5 yaşından eskiyse değiştirmek gerekebilir.",
+    "belirtiler": [
+      "sabah marş zor basıyor",
+      "marşa basınca zayıf ses geliyor",
+      "farlar silik yanıyor",
+      "kontak açınca göstergeler titriyor",
+      "araç soğukta zor çalışıyor",
+      "marş motoru dönmüyor sadece tık sesi var",
+      "akü lambası yanıyor"
+    ]
+  },
+  "atesleme": {
+    "ad": "Ateşleme sistemi (buji / bobin)",
+    "oncelik": "orta",
+    "oneri": "Buji ve bobinleri kontrol ettirin. Titreşim sürerse araç katalizöre zarar verebilir, uzun yol yapmayın.",
+    "belirtiler": [
+      "motor rölantide titriyor",
+      "motor tekliyor",
+      "gaz verince araç çekmiyor",
+      "motor arızası lambası yanıp sönüyor",
+      "yakıt tüketimi arttı",
+      "araç sarsılarak ilerliyor",
+      "rölanti dalgalanıyor"
+    ]
+  },
+  "sogutma": {
+    "ad": "Soğutma sistemi (radyatör / termostat / su pompası)",
+    "oncelik": "yüksek",
+    "oneri": "Sıcaklık yükselirse hemen durup motoru kapatın, soğuduktan sonra su seviyesine bakın. Devam ederek sürmek motora ciddi zarar verir.",
+    "belirtiler": [
+      "motor ısınıyor",
+      "sıcaklık göstergesi kırmızıya çıkıyor",
+      "kaputtan buhar çıkıyor",
+      "antifriz seviyesi sürekli düşüyor",
+      "park yerinde yerde sıvı birikiyor",
+      "kalorifer soğuk üflüyor",
+      "tatlı kokulu duman geliyor"
+    ]
+  },
+  "fren": {
+    "ad": "Fren balata / disk aşınması",
+    "oncelik": "yüksek",
+    "oneri": "Güvenlik riski var. Araç servise götürülmeli, fren performansı düşükse sürmeyin.",
+    "belirtiler": [
+      "fren yapınca gıcırtı geliyor",
+      "fren pedalı yumuşak",
+      "frende direksiyon titriyor",
+      "fren mesafesi uzadı",
+      "metal sürtme sesi geliyor",
+      "fren lambası yanıyor",
+      "fren yapınca araç bir tarafa çekiyor"
+    ]
+  },
+  "suspansiyon": {
+    "ad": "Süspansiyon / rotil / amortisör",
+    "oncelik": "orta",
+    "oneri": "Ön takım kontrolü yaptırın. Ciddi aşınma direksiyon kontrolünü etkileyebilir.",
+    "belirtiler": [
+      "çukurdan geçerken tak tak ses geliyor",
+      "araç sallanarak gidiyor",
+      "ön taraftan tıkırtı geliyor",
+      "viraj alırken yalpalıyor",
+      "amortisör yağ sızdırıyor",
+      "direksiyon gevşek hissediliyor",
+      "lastikler düzensiz aşınıyor"
+    ]
+  },
+  "turbo": {
+    "ad": "Turbo şarj sorunu",
+    "oncelik": "orta",
+    "oneri": "Turbo hortumlarını ve yağ seviyesini kontrol ettirin. Düşük güçle devam etmek hasarı artırmaz ama geciktirmeyin.",
+    "belirtiler": [
+      "araç güçsüz kaldı",
+      "gaz verince islim sesi çıkıyor",
+      "egzozdan mavi duman çıkıyor",
+      "turbo devreye girmiyor",
+      "ıslık gibi ses geliyor",
+      "motor yağı hızlı azalıyor",
+      "ivmelenmede boğulma var"
+    ]
+  },
+  "yakit": {
+    "ad": "Yakıt pompası / filtre / enjektör",
+    "oncelik": "orta",
+    "oneri": "Yakıt filtresini ve pompa basıncını kontrol ettirin. Yolda kalma riski var.",
+    "belirtiler": [
+      "yüksek hızda araç tekliyor",
+      "motor birden duruyor",
+      "depo doluyken çalışmıyor",
+      "depo bölgesinden vızıltı geliyor",
+      "çalıştırırken uzun süre marşa basmam gerekiyor",
+      "gaz tepkisi gecikmeli",
+      "yakıt kokusu geliyor"
+    ]
+  },
+  "klima": {
+    "ad": "Klima sistemi (gaz / kompresör)",
+    "oncelik": "düşük",
+    "oneri": "Klima gazı ve kompresör kontrolü yaptırın. Güvenliği etkilemez ama kompresör arızası pahalıya gelebilir.",
+    "belirtiler": [
+      "klima soğutmuyor",
+      "klima açınca kötü koku geliyor",
+      "klima kompresörü ses yapıyor",
+      "klima açınca motor zorlanıyor",
+      "havalandırmadan ılık hava geliyor",
+      "klima çalışırken tıkırtı var"
+    ]
+  },
+  "debriyaj": {
+    "ad": "Debriyaj / volan aşınması",
+    "oncelik": "orta",
+    "oneri": "Debriyaj seti ve volan kontrolü gerekir. Kayma sürerse yolda kalabilirsiniz.",
+    "belirtiler": [
+      "debriyaj kayıyor",
+      "gaz verince devir artıyor ama hız artmıyor",
+      "vites geçirirken zorlanıyorum",
+      "debriyaj pedalı sert",
+      "yanık kokusu geliyor",
+      "debriyaj pedalı yerde kalıyor",
+      "vites girerken gıcırdıyor"
+    ]
+  },
+  "egzoz": {
+    "ad": "Egzoz / katalitik konvertör",
+    "oncelik": "orta",
+    "oneri": "Egzoz kaçağı ve katalizör durumu kontrol edilmeli. Kaçak kabine zehirli gaz sızdırabilir.",
+    "belirtiler": [
+      "egzozdan yüksek ses geliyor",
+      "egzozdan siyah duman çıkıyor",
+      "yumurta kokusu geliyor",
+      "araç güçten düştü",
+      "alttan gürültülü ses var",
+      "emisyon ölçümünden kaldı",
+      "egzoz uç kısmı titriyor"
+    ]
+  },
+  "lastik": {
+    "ad": "Lastik / rot balans / jant",
+    "oncelik": "orta",
+    "oneri": "Hava basıncı, balans ve rot ayarını kontrol ettirin. Lastik yanağında şişlik varsa sürmeyin.",
+    "belirtiler": [
+      "yüksek hızda direksiyon titriyor",
+      "araç bir tarafa çekiyor",
+      "lastik hava kaybediyor",
+      "lastiğin yanında şişlik var",
+      "araç düz yolda sağa kayıyor",
+      "ön lastikler tek taraftan eriyor",
+      "jantlar çarpık"
+    ]
+  },
+  "alternator": {
+    "ad": "Alternatör / şarj sistemi",
+    "oncelik": "yüksek",
+    "oneri": "Şarj voltajını ölçtürün (motor çalışırken 13.5-14.5 V olmalı). Akü ışığı yanarken araç kısa sürede durabilir.",
+    "belirtiler": [
+      "akü lambası sürekli yanıyor",
+      "seyir halinde farlar kararıyor",
+      "motor çalışırken akü boşalıyor",
+      "kayış sesi geliyor",
+      "elektronik aksamlar kendiliğinden kapanıyor",
+      "araç yolda durdu yeniden çalışmadı",
+      "radyo ve ekran kesiliyor"
+    ]
+  },
+  "yag": {
+    "ad": "Yağ basıncı düşük / yağ kaçağı",
+    "oncelik": "yüksek",
+    "oneri": "Yağ ikazı yanıyorsa motoru hemen durdurun, yağ seviyesini kontrol edin. Yağsız çalışmak motoru kısa sürede bitirir.",
+    "belirtiler": [
+      "yağ ikazı yanıyor",
+      "yağ seviyesi çubuğunda yağ yok",
+      "park yerinde altında yağ lekesi var",
+      "motordan yanık yağ kokusu geliyor",
+      "motor yağ eksiltiyor",
+      "motor sesi sertleşti tıkırdıyor",
+      "egzozdan yağ yanığı gibi duman çıkıyor"
+    ]
+  },
+  "triger": {
+    "ad": "Triger kayışı / zinciri",
+    "oncelik": "yüksek",
+    "oneri": "Triger kopması motora ağır hasar verir. Bakım km'si geçtiyse veya ses varsa sürmeden kontrol ettirin.",
+    "belirtiler": [
+      "motorun ön tarafından cırlama sesi geliyor",
+      "triger değişim kilometresi geçti",
+      "motor zincir gibi takırdıyor",
+      "motor rölantide düzensiz ve tıkırtılı",
+      "marş basıyor ama motor çalışmıyor",
+      "motor kapağı tarafından tıkırtı geliyor",
+      "triger kapağında yağ var"
+    ]
+  },
+  "direksiyon": {
+    "ad": "Direksiyon sistemi (servo / kremayer)",
+    "oncelik": "yüksek",
+    "oneri": "Direksiyon hissi kaybı güvenlik riskidir. Servo yağı ve kremayer kontrolü yaptırın, kontrol sorunu varsa sürmeyin.",
+    "belirtiler": [
+      "direksiyon çok ağır döndürülüyor",
+      "direksiyon çevirirken inleme sesi geliyor",
+      "direksiyon boşluğu var",
+      "direksiyonda servo yağı sızıntısı var",
+      "direksiyon kendiliğinden merkeze dönmüyor",
+      "direksiyon ışığı yandı",
+      "park ederken direksiyon çevirmek zorlaştı"
+    ]
+  },
+  "sanziman": {
+    "ad": "Otomatik şanzıman sorunu",
+    "oncelik": "orta",
+    "oneri": "Şanzıman yağ seviyesi ve yazılım kontrolü yaptırın. Vites vurması sürerse hasar artar.",
+    "belirtiler": [
+      "vites geçişlerinde sert vuruntu oluyor",
+      "otomatik vites geç yükseltiyor",
+      "vites boşa düşüyor",
+      "vites kolu D'de iken araç hareket etmiyor",
+      "şanzımandan uğultu geliyor",
+      "sürekli aynı vitesde kalıyor",
+      "vites geçerken devir yükselip düşüyor"
+    ]
+  },
+  "dpf": {
+    "ad": "DPF / EGR (dizel partikül ve emisyon sistemi)",
+    "oncelik": "orta",
+    "oneri": "DPF'nin yenilenmesi için uzun yol yapmak yardımcı olabilir. İkaz sürerse servis temizliği gerekir.",
+    "belirtiler": [
+      "DPF ikazı yanıyor",
+      "dizel aracım acil durum moduna giriyor",
+      "şehir içi kullanımda egzoz uyarısı çıkıyor",
+      "yakıt tüketimi arttı ve motor yağ seviyesi yükseldi",
+      "kısa mesafede sürekli rejenerasyon oluyor",
+      "fan sürekli yüksek hızda çalışıyor",
+      "gaz tepkisi kesik kesik"
+    ]
+  },
+  "lambda": {
+    "ad": "Oksijen (lambda) sensörü / emisyon sensörü",
+    "oncelik": "düşük",
+    "oneri": "Arıza kodunu okutun, sensör değişimi genelde basit ve ucuzdur. Geciktirirsek yakıt tüketimi ve katalizör etkilenir.",
+    "belirtiler": [
+      "motor arıza lambası sürekli yanık",
+      "yakıt tüketimi birden arttı",
+      "rölanti hafif dalgalı",
+      "egzoz kokusu yoğun",
+      "emisyon ölçümünde CO yüksek çıktı",
+      "bilgisayar lambda sensörü hatası veriyor",
+      "performans düşüklüğü hafif ama sürekli"
+    ]
+  },
+  "mars": {
+    "ad": "Marş motoru / marş rölesi",
+    "oncelik": "orta",
+    "oneri": "Akü sağlamsa marş motoru ve rölesi kontrol edilmeli. Aralıklı çalışma yolda kalma riskidir.",
+    "belirtiler": [
+      "akü yeni ama marş basmıyor",
+      "marşa basınca takırtı geliyor ama motor dönmüyor",
+      "bazen çalışıyor bazen çalışmıyor",
+      "kontakta hiçbir ses gelmiyor ama farlar yanıyor",
+      "marş motoru bir kez bastıktan sonra sıkışıyor",
+      "marştan yanık kokusu geliyor",
+      "motoru ittirince çalışıyor"
+    ]
+  },
+  "abs": {
+    "ad": "ABS / ESP sensörü",
+    "oncelik": "orta",
+    "oneri": "ABS ve ESP devre dışı kalabilir, ıslak zeminde dikkatli sürün. Tekerlek hız sensörü kontrol ettirin.",
+    "belirtiler": [
+      "ABS lambası yanıyor",
+      "ESP lambası yanıp sönüyor",
+      "kaygan zeminde araç kontrolsüz kayıyor",
+      "tekerlek hız sensörü hatası var",
+      "fren yaparken pedal titreşiyor ve ışık yanıyor",
+      "çekiş kontrol devre dışı yazısı çıkıyor",
+      "ABS ve el freni lambası birlikte yandı"
+    ]
+  }
+}

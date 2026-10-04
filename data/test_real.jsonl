@@ -1,0 +1,84 @@
+{"text": "Sabahları kontağı çevirince marş çok yavaş dönüyor, soğuk havalarda daha da kötü.", "label": "aku"}
+{"text": "Arabayı çalıştırırken sadece tık diye ses geliyor, motor dönmüyor.", "label": "aku"}
+{"text": "Bir gece far açık unutmuştum, ertesi gün araç hiç tepki vermedi.", "label": "aku"}
+{"text": "Rölantide araç sanki titriyor, motor düzensiz çalışıyor ve arada tekliyor.", "label": "atesleme"}
+{"text": "Gaza bastığımda araç çekmiyor, sarsılarak ilerliyor.", "label": "atesleme"}
+{"text": "Motor arıza ikazı sürekli yanıp sönüyor ve yakıt çok yakmaya başladı.", "label": "atesleme"}
+{"text": "Trafikte beklerken göstergedeki sıcaklık iğnesi tepeye çıktı, kaputun altından buhar geliyor.", "label": "sogutma"}
+{"text": "Her hafta antifriz eklemem gerekiyor ama yerde bir şey göremiyorum.", "label": "sogutma"}
+{"text": "Kalorifer artık sıcak üflemiyor ve motor çabuk ısınıyor.", "label": "sogutma"}
+{"text": "Frene basarken ön taraftan yüksek bir gıcırtı sesi duyuyorum.", "label": "fren"}
+{"text": "Fren pedalına basınca direksiyon sallanıyor ve durmam uzun sürüyor.", "label": "fren"}
+{"text": "Fren yaparken metal metale sürtme sesi geliyor, pedal da yumuşak.", "label": "fren"}
+{"text": "Kasisten geçerken ön tarafta tak tak diye vuruntu oluyor.", "label": "suspansiyon"}
+{"text": "Virajlarda araç çok yatıyor ve yolda salınım yapıyor.", "label": "suspansiyon"}
+{"text": "Amortisörün üzerinde yağ sızıntısı var, araç zıplayıp duruyor.", "label": "suspansiyon"}
+{"text": "Gaza basınca motor ıslık çalıyor ve araç eskisi gibi hızlanmıyor.", "label": "turbo"}
+{"text": "Egzozdan mavi renkli duman çıkıyor ve yağ eksiliyor, güç kaybı da var.", "label": "turbo"}
+{"text": "Hızlanırken boşa basma hissi var, turbo devreye girmiyor gibi.", "label": "turbo"}
+{"text": "Otoyolda giderken araç aniden tekledi, sonra tekrar toparladı.", "label": "yakit"}
+{"text": "Depodan bir uğultu geliyor ve sabah çalışması uzun sürüyor.", "label": "yakit"}
+{"text": "Motor yolda durdu, biraz bekleyince yeniden çalıştı. Yakıt kokusu da var.", "label": "yakit"}
+{"text": "Klimayı açıyorum ama sadece ılık hava geliyor.", "label": "klima"}
+{"text": "Klima çalışınca havalandırmadan nemli kötü bir koku yayılıyor.", "label": "klima"}
+{"text": "Klima kompresörü devreye girince motor zorlanıyor ve tıkırtı geliyor.", "label": "klima"}
+{"text": "Gaza basınca devir yükseliyor ama araç hızlanmıyor, kayıyor gibi.", "label": "debriyaj"}
+{"text": "Debriyaj pedalı çok sert oldu ve vites geçirirken zorlanıyorum.", "label": "debriyaj"}
+{"text": "Yokuşta kalkış yaparken yanık kokusu geliyor, debriyaj tutmuyor.", "label": "debriyaj"}
+{"text": "Egzozdan çok gürültülü bir ses geliyor ve altta bir yerde patlak var gibi.", "label": "egzoz"}
+{"text": "Arabadan yumurta gibi kükürt kokusu geliyor ve emisyondan kaldı.", "label": "egzoz"}
+{"text": "Egzozdan koyu siyah duman çıkıyor ve araç güçsüz.", "label": "egzoz"}
+{"text": "Saatte 110 üzerinde direksiyon elimde titremeye başlıyor.", "label": "lastik"}
+{"text": "Düz yolda direksiyonu bıraksam araç sağa doğru çekiyor.", "label": "lastik"}
+{"text": "Lastiğin yan tarafında bir kabarıklık fark ettim ve hava kaybediyor.", "label": "lastik"}
+{"text": "Seyir halinde akü ikazı yandı ve farlar loşlaştı.", "label": "alternator"}
+{"text": "Araç yolda gittiği sırada ekran ve radyo kapandı, sonra motor da durdu.", "label": "alternator"}
+{"text": "Yeni akü taktırdım ama birkaç günde yine boşaldı, kayıştan da ses geliyor.", "label": "alternator"}
+{"text": "Havalar soğuyunca sabah araç ancak üçüncü denemede çalışıyor.", "label": "aku"}
+{"text": "Akü ömrünü doldurmuş galiba, marş uyuşuk dönüyor.", "label": "aku"}
+{"text": "Rölantide araç titreyip duruyor, arada bir silkeleniyor.", "label": "atesleme"}
+{"text": "Motor üç silindirde çalışıyormuş gibi tekliyor.", "label": "atesleme"}
+{"text": "Radyatör fanı hiç devreye girmiyor ve motor kaynıyor.", "label": "sogutma"}
+{"text": "Aracın altından su damlıyor, su seviyesi azalıyor.", "label": "sogutma"}
+{"text": "Fren balataları bitmiş gibi, ses çok kötü.", "label": "fren"}
+{"text": "Frene basınca pedal yere kadar gidiyor.", "label": "fren"}
+{"text": "Arka taraftan bozuk yolda çok gürültü geliyor.", "label": "suspansiyon"}
+{"text": "Direksiyonu çevirirken ön takımdan kıtırtı sesi duyuyorum.", "label": "suspansiyon"}
+{"text": "Dizel araç gaz vermeyince hiç güç yok, turbo ıslığı da çok.", "label": "turbo"}
+{"text": "Turbo hortumu çatlamış sanırım, güç sürekli düşüyor.", "label": "turbo"}
+{"text": "Araç yokuşta gaz yemiyor ve sonra stop ediyor.", "label": "yakit"}
+{"text": "Yakıt pompası ses yapıyor ve motor hırlıyor.", "label": "yakit"}
+{"text": "Klima gazı bitmiş olabilir, ılık üflüyor.", "label": "klima"}
+{"text": "Klima açılınca ön taraftan metalik ses duyuluyor.", "label": "klima"}
+{"text": "Debriyajı bıraktığımda araç silkeleniyor ve yanık kokusu var.", "label": "debriyaj"}
+{"text": "Dördüncü vitese geçince devir artıyor ama araç hızlanmıyor.", "label": "debriyaj"}
+{"text": "Egzoz borusu kopmuş gibi çok yüksek ses çıkıyor.", "label": "egzoz"}
+{"text": "Katalizör tıkanmış olabilir, araç hiç çekmiyor.", "label": "egzoz"}
+{"text": "Araba direksiyonda titriyor, balans bozuk sanırım.", "label": "lastik"}
+{"text": "Ön lastikler yanlardan aşınmış, araç yola oturmuyor.", "label": "lastik"}
+{"text": "Akü bitiyor, alternatör şarj etmiyor olabilir.", "label": "alternator"}
+{"text": "Seyirde sinyal ve farlar zayıflıyor, ışıklar parlayıp sönüyor.", "label": "alternator"}
+{"text": "Gösterge panelinde kırmızı yağ kandili yandı.", "label": "yag"}
+{"text": "Aracın altında koyu renkli yağ birikintisi var.", "label": "yag"}
+{"text": "Motor yağını sık sık eklemem gerekiyor, hızla azalıyor.", "label": "yag"}
+{"text": "Motorun ön kısmından cırcır gibi bir ses geliyor.", "label": "triger"}
+{"text": "Aracın triger bakımı çoktan geçti ve motor tıkırdıyor.", "label": "triger"}
+{"text": "Marşa basıyorum motor dönüyor ama çalışmıyor, triger koptu mu?", "label": "triger"}
+{"text": "Direksiyon bir anda çok ağırlaştı, park ederken zorlanıyorum.", "label": "direksiyon"}
+{"text": "Direksiyonu çevirince inleme gibi ses geliyor.", "label": "direksiyon"}
+{"text": "Direksiyon yağı sızdırıyor ve ışık yandı.", "label": "direksiyon"}
+{"text": "Otomatik vites sert vuruyor, geçişlerde sarsılıyorum.", "label": "sanziman"}
+{"text": "Araç D'de iken ilerlemiyor, vites boşta gibi.", "label": "sanziman"}
+{"text": "Şanzımandan uğultu geliyor ve vites geç yükseltiyor.", "label": "sanziman"}
+{"text": "Dizel aracımda DPF ikazı çıktı, motor güç kaybediyor.", "label": "dpf"}
+{"text": "Sürekli rejenerasyon oluyor, fan durmuyor ve yakıt çok gidiyor.", "label": "dpf"}
+{"text": "Acil durum moduna giriyor, egzoz sistem uyarısı veriyor.", "label": "dpf"}
+{"text": "Motor arıza ikazı yanık ve tüketim arttı ama araç normal çalışıyor.", "label": "lambda"}
+{"text": "Bilgisayar lambda sensörü hatası gösteriyor.", "label": "lambda"}
+{"text": "Emisyon testinde CO değeri yüksek çıktı, araç gücünü korumuş.", "label": "lambda"}
+{"text": "Akü yeni, ama marşa basınca sadece takırtı var ve motor dönmüyor.", "label": "mars"}
+{"text": "Bazen bir basışta çalışıyor bazen hiç tepki vermiyor, farlar yanıyor.", "label": "mars"}
+{"text": "Kontağı çevirdiğimde ses yok, farlar tam parlak yanıyor.", "label": "mars"}
+{"text": "ABS lambası yandı ve fren yaparken pedal titriyor.", "label": "abs"}
+{"text": "ESP lambası yanıp sönüyor, ıslak yolda araç kayıyor.", "label": "abs"}
+{"text": "Çekiş kontrol devre dışı yazısı çıktı, tekerlek sensörü hatası var.", "label": "abs"}
