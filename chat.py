@@ -4,17 +4,45 @@ Karar küçük ML modelinden gelir; cevap şablondur (uydurma riski yok).
 Model emin değilse, en olası arızaları ayıran bir soru sorar.
 """
 import json
+import os
+import subprocess
 import sys
+import warnings
 from datetime import datetime
 
 import joblib
 
 from common import DATA, MODELS, load_kb
 
+# Windows konsol/yönlendirme kodlaması ne olursa olsun Türkçe ve simgeler çökmesin
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 CONF = 0.45       # bu olasılığın altında soru sor
 MARGIN = 0.15     # 1. ve 2. arıza arası fark bunun altındaysa soru sor
 MAX_QUESTIONS = 2
 DISCLAIMER = "Bu bir ön tahmindir; kesin teşhis için yetkili servise danışın."
+
+
+def load_model():
+    """Modeli yükler. Başka scikit-learn sürümüyle kaydedilmişse güvenilmez olduğu için
+    bu bilgisayarda yeniden eğitir."""
+    path = MODELS / "ariza_model.joblib"
+    if not path.exists():
+        sys.exit("Model yok. Önce: python run_pipeline.py")
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always")
+        model = joblib.load(path)
+    if any("InconsistentVersion" in type(w.message).__name__ for w in caught):
+        print("Model başka bir scikit-learn sürümüyle kaydedilmiş; bu bilgisayarda yeniden eğitiliyor...")
+        (MODELS / "meta.json").unlink(missing_ok=True)      # eski skor kapısı devre dışı
+        env = {**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"}
+        subprocess.run([sys.executable, "train.py"], env=env, check=True)
+        model = joblib.load(path)
+    return model
 
 
 def predict(model, text):
@@ -57,10 +85,7 @@ def save_feedback(text, ranked):
 
 
 def main():
-    path = MODELS / "ariza_model.joblib"
-    if not path.exists():
-        sys.exit("Model yok. Önce: python run_pipeline.py")
-    model, kb = joblib.load(path), load_kb()
+    model, kb = load_model(), load_kb()
     print("Araç arıza asistanı. Aracınızdaki belirtiyi anlatın (çıkmak için 'q').\n")
     while True:
         text = input("Sen: ").strip()

@@ -27,9 +27,16 @@ from datetime import datetime, timedelta
 
 import joblib
 
-from chat import CONF, MARGIN, MAX_QUESTIONS, ask_followup, predict
+from chat import CONF, MARGIN, MAX_QUESTIONS, ask_followup, load_model, predict
 from common import DATA, MODELS, load_kb, read_jsonl, tr_lower
 from llm import GroqClient, MockClient, ModelUnavailable, RateLimit
+
+# Windows konsol/yönlendirme kodlaması ne olursa olsun Türkçe ve simgeler çökmesin
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 
 STATE_PATH = DATA / "selfplay_state.json"
 LOG_PATH = DATA / "selfplay_log.jsonl"
@@ -120,7 +127,12 @@ def sleep_with_heartbeat(seconds: float) -> None:
 SIM_FIRST = """Sen aracı bozulmuş sıradan bir sürücüsün. Teknik terim bilmezsin.
 Aracındaki sorunu servise yazar gibi, Türkçe ve gündelik dille, 1-2 cümleyle anlat.
 Sorunun adını söyleme. Belirtiler: {belirtiler}
-Bu belirtilerden bir ya da ikisini kendi sözlerinle anlat; cümleleri kopyalama. Yalnızca mesajı yaz."""
+Bu belirtilerden bir ya da ikisini kendi sözlerinle anlat; cümleleri kopyalama.{zorluk}
+Yalnızca mesajı yaz."""
+
+HARD_EXTRA = (" Belirsiz ve kısa anlat, tek bir belirtiyi söyle, listedeki kelimeleri kullanma,"
+              " günlük deyimler ve eksik bilgi kullan, bazen yanlış bir tahminini de ekle.")
+difficulty = {"extra": ""}
 
 SIM_ANSWER = """Sen aracı bozulmuş sıradan bir sürücüsün. Servis sana şunu sordu: "{soru}"
 Doğru cevap: {cevap}
@@ -145,7 +157,7 @@ def run_episode(client, kb, model, state, rng, sim_model, teacher_model):
     info = kb[label]
     sym_text = "; ".join(info["belirtiler"])
     text = with_quota(lambda: client.chat(
-        sim_model, [{"role": "user", "content": SIM_FIRST.format(belirtiler=sym_text)}]), state)
+        sim_model, [{"role": "user", "content": SIM_FIRST.format(belirtiler=sym_text, zorluk=difficulty["extra"])}]), state)
     transcript = [("sürücü", text)]
 
     ranked = predict(model, text)
@@ -209,12 +221,14 @@ def append_rows(rows: list[dict]) -> int:
 
 def retrain() -> None:
     log("Yeniden eğitim (kapı: elle yazılmış test seti)...")
-    out = subprocess.run([sys.executable, "train.py"], capture_output=True, text=True, encoding="utf-8")
-    for line in out.stdout.splitlines():
+    env = {**os.environ, "PYTHONUTF8": "1", "PYTHONIOENCODING": "utf-8"}   # Windows kodlama sorunu
+    out = subprocess.run([sys.executable, "train.py"], capture_output=True, text=True,
+                         encoding="utf-8", errors="replace", env=env)
+    for line in (out.stdout or "").splitlines():
         if any(k in line for k in ("Doğruluk", "kaydedildi", "korundu", "kötü")):
             log("  " + line.strip())
     if out.returncode != 0:
-        log("  eğitim hatası: " + out.stderr[-300:])
+        log("  eğitim hatası: " + (out.stderr or "")[-300:])
 
 
 # ---------------------------------------------------------------- ana döngü
@@ -227,6 +241,8 @@ def main() -> None:
     ap.add_argument("--mock-quota-every", type=int, default=0, help="sahte kota hatası sıklığı (deneme)")
     ap.add_argument("--mock-quota-wait", type=float, default=2.0)
     ap.add_argument("--seed", type=int, default=None)
+    ap.add_argument("--hard", action="store_true",
+                    help="simüle sürücü daha belirsiz ve kısa anlatsın (bot kolay doğru bilirse kullan)")
     ap.add_argument("--list-models", action="store_true", help="hesabındaki modelleri listele ve çık")
     args = ap.parse_args()
 
@@ -236,6 +252,8 @@ def main() -> None:
         return
     if not (MODELS / "ariza_model.joblib").exists():
         sys.exit("Önce temel modeli eğit: python run_pipeline.py")
+    if args.hard:
+        difficulty["extra"] = HARD_EXTRA
     kb = load_kb()
     rng = random.Random(args.seed)
     client = (MockClient(args.mock_quota_every, args.mock_quota_wait) if args.mock else GroqClient())
@@ -251,7 +269,7 @@ def main() -> None:
             sleep_with_heartbeat(left + 2)
         state["paused_until"] = None
 
-    model = joblib.load(MODELS / "ariza_model.joblib")
+    model = load_model()
     done = correct_total = 0
     log(f"Başlıyor. Simüle sürücü: {sim_model} | öğretmen: {teacher_model} | toplam konuşma: {state['episodes']}")
     try:
@@ -267,7 +285,7 @@ def main() -> None:
                 f"(+{added} yeni cümle, bu oturum doğruluk %{100 * correct_total / done:.0f})")
             if state["since_retrain"] >= args.retrain_every:
                 retrain()
-                model = joblib.load(MODELS / "ariza_model.joblib")
+                model = load_model()
                 state["since_retrain"] = 0
                 save_state(state)
     except KeyboardInterrupt:

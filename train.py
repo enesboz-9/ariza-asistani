@@ -16,6 +16,13 @@ from sklearn.pipeline import make_pipeline
 
 from common import DATA, MODELS, read_jsonl, strip_diacritics, tr_lower
 
+# Windows konsol/yönlendirme kodlaması ne olursa olsun Türkçe ve simgeler çökmesin
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 MODEL_PATH = MODELS / "ariza_model.joblib"
 META_PATH = MODELS / "meta.json"
 

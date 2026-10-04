@@ -27,6 +27,8 @@ Karar küçük bir ML modelinden gelir (~0.1 MB); LLM yalnızca eğitim verisi �
 - Bot yanılırsa öğretmen (LLM) o arıza için 5 zor anlatım yazar; hepsi `data/selfplay.jsonl` dosyasına gider.
 - Bot'un çok yanıldığı arızalar daha sık seçilir. Her 25 konuşmada yeniden eğitim yapılır;
   yeni model, elle yazılmış test setinde eskisinden kötüyse kaydedilmez.
+- `--hard`: simüle sürücü daha belirsiz anlatır. Bot ilk 25-50 konuşmada hep doğru biliyorsa (sürücü çok kolay anlatıyor demektir) bunu aç.
+- Model başka bir scikit-learn sürümüyle kaydedilmişse program bunu fark edip bu bilgisayarda yeniden eğitir.
 - Günlük kota dolunca `data/selfplay_state.json` içine bekleme süresi yazılır; uygulama kapansa bile
   yeniden başlatınca bekleme biter, döngü devam eder. Konuşma kayıtları: `data/selfplay_log.jsonl`.
 - Modeller otomatik seçilir: hesabında çalışan ilk aday kullanılır (llama-3.x ücretsiz hesapta kapalı olabilir,
