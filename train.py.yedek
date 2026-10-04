@@ -32,7 +32,7 @@ META_PATH = MODELS / "meta.json"
 # Şablon verisi aynı ~150 ifadenin kombinasyonlarıdır; LLM/öz-oyun/geri bildirim cümleleri ise
 # gerçek dile yakın ve az sayıdadır. Ağırlık vermezsek 8000 şablon cümle 5-10 yeni cümleyi bastırır.
 SOURCE_WEIGHT = {"sentetik": 1.0, "dış veri (CSV)": 3.0,
-                 "onaylı geri bildirim": 5.0, "öz-oyun (LLM sohbetleri)": 2.0}
+                 "onaylı geri bildirim": 5.0, "öz-oyun (LLM sohbetleri)": 5.0}
 
 # Yeni model, şimdiye kadarki EN İYİ skordan bu kadar kötüyse de kabul edilir. 84 cümlelik testte
 # tek cümle ~%1.2 eder; 0.01'den küçük farklar gürültüdür. En iyi skorla kıyaslandığı için
